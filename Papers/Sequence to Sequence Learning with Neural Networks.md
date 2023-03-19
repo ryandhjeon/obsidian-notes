@@ -68,7 +68,23 @@ $$ \hat{T} = \arg \max_{T}p(T|S) $$
 *Training Details*
 - Deep LSTMs with 4 layers
 - Initialized all ofthe LSTM's parameters with the uniform distribution between -0.08 and 0.08
-- ㅕsed [[stochastic gradient descent]] without momentum, with a fixed learning rate of 0.7. After 5 epochs, we begun halving the learning rate every half epoch. We trained our models for a total of 7.5 epochs.
+- Used [[stochastic gradient descent]] without momentum, with a fixed learning rate of 0.7. After 5 epochs, we <u>begun halving the learning rate every half epoch</u>. We trained our models for a total of 7.5 epochs.
 - We used batches of 128 sequences for the gradient and divided it the size of the batch (namely, 128).
-	- 문장 학습할때 
+	- 학습과정에서 Model forwarding 할때 사용하는 문장의 개수가 128개
+- Minibatch of 128 randomly chosen training sentences will have many short sentences and few long sentences
+	- Minibatch에 있는 sentence들의 길이가 비슷하도록 조절해서, 학습속도 Up.
 
+*Experimental Results*
+- While the decoded translations of the LSTM ensemble do not outperform the best WMT’14 system, it is the first time that a pure neural translation system outperforms a phrase-based SMT baseline on a large scale MT task by a sizeable margin, despite its inability to handle out-of-vocabulary words.
+	- 가장 좋지는 않지만 DNN 기반 Method의 가능성을 잘 보여준다
+
+*Model Analysis*
+![[Pasted image 20230319172326.png]]
+- 2-dimensional PCA projection of the LSTM hidden states
+- Phrases are clustered by meaning
+
+### Conclusion
+
+- Deep LSTM can outperform a standard SMT-based system
+- Reversing the words in the source sentences made result better
+- 

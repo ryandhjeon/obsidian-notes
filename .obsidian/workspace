@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "935f588927d1a028",
+    "type": "split",
+    "children": [
+      {
+        "id": "5dde523e241750c6",
+        "type": "leaf",
+        "dimension": 74.88789237668162,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "3. Papers/Knowledge Graph-based Neurodegenerative Diseases and Diet Relationship Discovery.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "6e35621edfb76dc1",
+        "type": "leaf",
+        "dimension": 25.112107623318387,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "3. Papers/Knowledge Graph-based Neurodegenerative Diseases and Diet Relationship Discovery.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1,
+              "close": false
+            }
+          }
+        },
+        "group": "29c50c8e7595be9c"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a12e2add9438cfac",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc2da4436b030721",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "797c6594aabb7ed9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            },
+            "group": "29c50c8e7595be9c"
+          },
+          {
+            "id": "37ad2d4445f214df",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "273b50f3761c2c1b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "6a297c696225baa9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 355.5
+  },
+  "right": {
+    "id": "75dd782add2c5012",
+    "type": "split",
+    "children": [
+      {
+        "id": "f659fea95ad4bf6e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b157a966f62c774c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3. Papers/Knowledge Graph-based Neurodegenerative Diseases and Diet Relationship Discovery.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a0f07d722ec852d9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3. Papers/Knowledge Graph-based Neurodegenerative Diseases and Diet Relationship Discovery.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "761cc22181230446",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "549f96c40bafff41",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3. Papers/Knowledge Graph-based Neurodegenerative Diseases and Diet Relationship Discovery.md"
+              }
+            }
+          },
+          {
+            "id": "41f5c5ad2f3e5e89",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "88d8637bad19aa61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb8664ace821b4f4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3. Papers/Knowledge Graph-based Neurodegenerative Diseases and Diet Relationship Discovery.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5dde523e241750c6",
+  "lastOpenFiles": [
+    "2. ML/ML MOC.md",
+    "Templates/ML Template.md",
+    "Templates/Paper Template.md",
+    "Templates/Project Template.md",
+    "2022-09-20.md",
+    "Templates/Bio Template.md",
+    "3. Papers/Knowledge Graph-based Neurodegenerative Diseases and Diet Relationship Discovery.md",
+    "1. Bio/Untitled.md",
+    "Templates/Insert date.md",
+    "Untitled.md"
+  ]
+}

@@ -48,4 +48,5 @@ Deep Neural Networks (DNNs) are powerful models that have achieved excellent per
 - Used 160,000 of the most frequent words for the source language and 80,000 of the most frequent words for the target language
 	- Meaning Only using the words within the 160,000 list
 
-*Decoding *
+*Decoding & Rescoring*
+- 

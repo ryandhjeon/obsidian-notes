@@ -13,6 +13,7 @@ Deep Neural Networks (DNNs) are powerful models that have achieved excellent per
 ```
 
 ### Introduction
+
 *Background*
 - NN are similar to conventional statistical models, but learn an [[intricate]] computation.
 - [[Deep Neural Networks]] (DNN) uses gradient decent with backpropagation to learn a complicated computation well.
@@ -26,8 +27,6 @@ Deep Neural Networks (DNNs) are powerful models that have achieved excellent per
 - [[Long Short-Term Memory]] (LSTM) can solve the issue, by using multiple LSTMs. Each LSTM can read the input sequence, one timestep at a time, and use another LSTM to extract the output sequence from that vector. 
 - Map the entire input sentence to the context vector. Then, the decoder receives the information on the input and hidden state, outputs the translation
 
-*Dataset*: WMT' 14 English to French translation task
-
 *Result*
 - The `SOS` could be used and get better result
 - Better result with input reversed `C - B - A`
@@ -39,3 +38,14 @@ Deep Neural Networks (DNNs) are powerful models that have achieved excellent per
 
 - [[Recurrent Neural Network]] (RNN) can easily map sequences to sequences whenever the alignment between the inputs the outputs is known ahead of time.
 - However, when the input and output sequence have different lengths, it gets complicated
+
+### Experiment
+
+*Dataset*
+- **WMT' 14** English to French translation task dataset
+- 12M sentences (348M French words, 304M English words)
+- Used fixed vocab for both languages, as typical language models rely on a representation for each word
+- Used 160,000 of the most frequent words for the source language and 80,000 of the most frequent words for the target language
+	- Meaning Only using the words within the 160,000 list
+
+*Decoding *

@@ -55,9 +55,17 @@ $$1/|S| \sum_{(T,S)\in{S}}\log{p}(T|S)$$
 - `S`: Source
 - `T`: Target
 - For input `S`, the target`T` should be outputed as 1:1. With the log, the probability goes up
-- 
+
 **Testing**
 - Once training is complete, we product translations by finding the <u>most likely translation </u>according to the LSTM.
 - 매번 S가 주어질때마다 가장 높은 확률을 가진 Target sentence를 return할 수 있는 T를 갖게 되는것
 $$ \hat{T} = \arg \max_{T}p(T|S) $$
-- [[Beam search]] decoder was also used. Not just using the best probabilistically high 
+- [[Beam search]] decoder was also used. Not just using the best probabilistically high sentences, but goes in deeper for the higher probability
+
+*Limitation*
+- More <u>confident predictions</u> in the <u>early parts</u> of the target sentence and to <u>less confident</u> predictions in the <u>later parts</u>.
+
+*Training Details*
+- Deep LSTMs with 4 layers
+- Initialized all ofthe LSTM's parameters with the uniform distribution between -0.08 and 0.08
+- Used basic stochastic gradient descent without momentum

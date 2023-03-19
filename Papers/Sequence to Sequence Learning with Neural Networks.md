@@ -68,4 +68,4 @@ $$ \hat{T} = \arg \max_{T}p(T|S) $$
 *Training Details*
 - Deep LSTMs with 4 layers
 - Initialized all ofthe LSTM's parameters with the uniform distribution between -0.08 and 0.08
-- Used basic stochastic gradient descent without momentum
+- Used basic [[stochastic gradient descent]] without momentum

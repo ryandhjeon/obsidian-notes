@@ -1,1 +1,3 @@
-# obsidian_notes
+# Notes on obsidian
+
+

@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Papers/Sequence to Sequence Learning with Neural Networks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "30b1919a10e485bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Long Short-Term Memory.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59dd999a822aa195",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Deep Neural Networks.md",
+                "file": "Papers/Sequence to Sequence Learning with Neural Networks.md",
                 "mode": "source",
                 "source": false
               }
@@ -147,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Papers/Sequence to Sequence Learning with Neural Networks.md",
+                "file": "Papers/Sequence to Sequence Learning with Neural Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Papers/Sequence to Sequence Learning with Neural Networks.md",
+                "file": "Papers/Sequence to Sequence Learning with Neural Networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Papers/Sequence to Sequence Learning with Neural Networks.md"
+                "file": "Papers/Sequence to Sequence Learning with Neural Networks.md"
               }
             }
           },
@@ -217,26 +193,29 @@
   },
   "active": "1c11de3b7908a4b9",
   "lastOpenFiles": [
+    "_. MOC/ML MOC.md",
     "README.md",
+    "Papers/Sequence to Sequence Learning with Neural Networks.md",
+    "Terminology",
+    "ML/Recurrent Neural Network.md",
     "Images/Pasted image 20230319153846.png",
-    "Long Short-Term Memory.md",
-    "2. Papers/Sequence to Sequence Learning with Neural Networks.md",
-    "Deep Neural Networks.md",
-    "intricate.md",
-    "Feature Contribution Ratio.md",
+    "ML/Long Short-Term Memory.md",
+    "ML/Deep Neural Networks.md",
+    "Terminology/intricate.md",
+    "ML/Feature Contribution Ratio.md",
     "FCR.md",
-    "1. ML/Knowledge Graph Reasoning.md",
-    "2. Papers/Cold Brew_ Distilling Graph Node Representations with Incomplete or Missing Neighborhoods.md",
-    "2. Papers/A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network.md",
-    "2. Papers/Reinforcement learning with dynamic completion for answering multi-hop questions over incomplete knowledge graph.md",
-    "2. Papers/Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph.md",
-    "2. Papers/Effective use of BERT in graph embeddings for sparse knowledge graph completion.md",
-    "2. Papers/Multi-Hop Knowledge Graph Reasoning with Reward Shaping.md",
-    "2. Papers/A Re-evaluation of Knowledge Graph Completion Methods.md",
-    "2. Papers/Mixed-Curvature Multi-Relational Graph Neural Network for Knowledge Graph Completion.md",
-    "2. Papers/Explaining Deep Learning Models Through Rule-Based Approximation and Visualization.md",
-    "2. Papers/Knowledge graph and knowledge reasoning_ A systematic review.md",
-    "2. Papers/Knowledge Graph Embedding by Translating on Hyperplanes.md",
-    "2. Papers/Knowledge graphs as tools for explainable machine learning - A survey.md"
+    "ML/Knowledge Graph Reasoning.md",
+    "Papers/Cold Brew_ Distilling Graph Node Representations with Incomplete or Missing Neighborhoods.md",
+    "Papers/A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network.md",
+    "Papers/Reinforcement learning with dynamic completion for answering multi-hop questions over incomplete knowledge graph.md",
+    "Papers/Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph.md",
+    "Papers/Effective use of BERT in graph embeddings for sparse knowledge graph completion.md",
+    "Papers/Multi-Hop Knowledge Graph Reasoning with Reward Shaping.md",
+    "Papers/A Re-evaluation of Knowledge Graph Completion Methods.md",
+    "Papers/Mixed-Curvature Multi-Relational Graph Neural Network for Knowledge Graph Completion.md",
+    "Papers/Explaining Deep Learning Models Through Rule-Based Approximation and Visualization.md",
+    "Papers/Knowledge graph and knowledge reasoning_ A systematic review.md",
+    "Papers/Knowledge Graph Embedding by Translating on Hyperplanes.md",
+    "Papers/Knowledge graphs as tools for explainable machine learning - A survey.md"
   ]
 }

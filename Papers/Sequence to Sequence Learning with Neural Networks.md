@@ -87,4 +87,3 @@ $$ \hat{T} = \arg \max_{T}p(T|S) $$
 
 - Deep LSTM can outperform a standard SMT-based system
 - Reversing the words in the source sentences made result better
-- 

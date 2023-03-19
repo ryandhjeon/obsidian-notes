@@ -49,13 +49,15 @@ Deep Neural Networks (DNNs) are powerful models that have achieved excellent per
 	- Meaning Only using the words within the 160,000 list
 
 *Decoding & Rescoring*
-
+**Training**
 Basic training objective of [[Neural Network]]
-$$1/|S| \sum_{(T,S)\in{S}}logp(T|S)$$
+$$1/|S| \sum_{(T,S)\in{S}}\log{p}(T|S)$$
 - `S`: Source
 - `T`: Target
 - For input `S`, the target`T` should be outputed as 1:1. With the log, the probability goes up
-
-Once training is complete, we product translations by finding the most likely translation according to the LSTM
-
-$$ \hat{T} = arg max$$
+- 
+**Testing**
+- Once training is complete, we product translations by finding the <u>most likely translation </u>according to the LSTM.
+- 매번 S가 주어질때마다 가장 높은 확률을 가진 Target sentence를 return할 수 있는 T를 갖게 되는것
+$$ \hat{T} = \arg \max_{T}p(T|S) $$
+- [[Beam search]] decoder was also used. Not just using the best probabilistically high 

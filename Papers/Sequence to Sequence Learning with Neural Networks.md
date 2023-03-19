@@ -68,4 +68,7 @@ $$ \hat{T} = \arg \max_{T}p(T|S) $$
 *Training Details*
 - Deep LSTMs with 4 layers
 - Initialized all ofthe LSTM's parameters with the uniform distribution between -0.08 and 0.08
-- Used basic [[stochastic gradient descent]] without momentum
+- ㅕsed [[stochastic gradient descent]] without momentum, with a fixed learning rate of 0.7. After 5 epochs, we begun halving the learning rate every half epoch. We trained our models for a total of 7.5 epochs.
+- We used batches of 128 sequences for the gradient and divided it the size of the batch (namely, 128).
+	- 문장 학습할때 
+

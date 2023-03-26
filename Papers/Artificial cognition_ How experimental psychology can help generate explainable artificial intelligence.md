@@ -22,5 +22,7 @@ Artificial Cognition: Use cognitive psychology for the explanation.
 
 ### The black-box problem in ML & Psychology
 
-
+- Example of an engineer looing under the hood.
+- We currently cannot meaningfully understand an AI’s behavior as a function of its inner workings.
+- 
 

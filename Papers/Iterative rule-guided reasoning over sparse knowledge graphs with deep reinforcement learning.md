@@ -88,10 +88,10 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 3. Now the model prefers the relation $r$ that are <u>frequently occurred rather</u> than considering the <u>joint probability of the action</u>. 
 4. Use dropout technique. It masks some outgoing relations randomly for the RL agent in the sampling step of REINFORCE, which gives randomized search effect.
 
-- **Global information extraction**: The rules and corresponding confident scores are obtained. This helps RL agent to make decisions with the guidance from an overview of the KG. 
-
-- Higher [rule guidance rewards]
-
+- [Global information extraction]: Activity of obtaining the rules and corresponding confident scores. 
+	- This helps RL agent to make decisions with the guidance from an overview of the KG. 
+	- Higher [rule guidance rewards] is given to the path sequence that follows the logic rules. This guides the selection of additional action space, so that the path of completion more consistent with [global information].
+- 
 
 
 

@@ -129,4 +129,8 @@ $$A_t = A_t + A_t^{add}$$
 
 - [Rule induction] : Apply [[AnyBURL]] model to extract the rules with high confidence scores in the given KG, and convert them to structured chain rules. 
 
-- [Fact inference] : 
+- [Fact inference] : Define reward function so the reasoning paths which match the rules will be better rewarded by the rule reward $R_r$. The RL agent <u>combines global KG information with the rules</u>. With combination of $R_h$, RL agent better optimized to adopt the KG environment and reason tail entities efficiently with rule guidance., 
+
+- [Iteration learning and reasoning] : The strategy iteratively induces rules from the new facts inferred by RL in the [Fact inference module], and reasons facts guided by the rules inferred from rule miner in the [Rule induction module]. 
+
+- Steps: 1. [Rule induction] for the KG global information to contribute to the furture training and multi-hop KG reasoning. Then, 2. [Fact inference]

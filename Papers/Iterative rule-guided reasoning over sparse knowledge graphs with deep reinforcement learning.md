@@ -14,5 +14,13 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 
 ### Proposed model
 
+- Differ from embedding-based methods: Just obtain $e_o$, and give essential supporting paths over KG as evidences of the reasoning results
 
+*RL*
+- Applying RL as the <u>training algorithm</u> of a <u>sequential decision model</u>, the process of multi-hop sequential reasoning in the KG can be modeled as [[Markov decision process]] (MDP)
 
+- RL sequentially selects an outgoing edge $l$: direction of maximum probability, and iterates until it reaches the target entity.
+
+- MDP supplies a mathematical framework for modeling sequential decision process with the interaction between the RL agent and the KG environment. 
+
+- States: We want to implement the state that encodes the observed information as much as possible. 

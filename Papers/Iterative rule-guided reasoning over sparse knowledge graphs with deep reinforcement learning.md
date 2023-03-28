@@ -78,7 +78,7 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 
 - Strategy dynamically allocates additional space to augment the original action space of the RL agent. Uses the RL agent with the rule guidance during the reasoning process. 
 
-- The candidate set of additional actions: $$C_t = {(r,e)|r \in R \land e \in \varepsilon }$$ 
+- The candidate set of additional actions: $$C_t = {(r,e)|r \in R \land e \in \mathcal{E} \land (e_t, r, e) \notin \mathcal{T} }$$ 
 
 
 

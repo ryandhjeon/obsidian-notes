@@ -40,4 +40,14 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 
 - $h_t$ covers the sequence of observations and actions. $h_t$ = LSTM($h_{t-1}, a_{t-1}$)
 
-- Encode the action space by stacking the embeddings of all actions in $A_t: A_t \in {R^d}$
+- Encode the action space by stacking the embeddings of all actions in $A_t: A_t \in {R^{|A_t|\times2d}}$
+
+- To avoid the dying ReLU, LeakyReLU with negative input slope $\alpha = 0.01$ is used as nonlinearity
+
+*Rule induction from the KG*
+- A rule head is denoted by r(...), rule body is denoted by the conjunction of atoms $b_1$(...), ... , $b_n$(...)
+
+- Quality of each rule is mesaured with its <u>confidence score</u>. #(x, y) denotes the number of facts corresponding to the condition.
+![[Pasted image 20230328140909.png]]
+
+- 

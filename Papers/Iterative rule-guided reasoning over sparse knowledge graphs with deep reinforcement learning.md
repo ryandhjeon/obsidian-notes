@@ -65,8 +65,11 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 - $R_h$ **hit target reward**, rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
 
 - Otherwise, for **soft reward** whose correctness is unknown, the embedding function of $\epsilon$ is used to measure the reward as a hit target reward $R_h$
+$$R_h = \mathbb{I}(\epsilon \in KG) + (1-\mathbb{I}(\epsilon \in KG))f(\epsilon)$$
 
+- $\mathbb{I}$ is an indicator function, $f(\epsilon)$ is a composition function for reward shaping using embeddings
 
+- 
 
 
 

@@ -103,8 +103,8 @@ $$R_t : r_{q}^{rule}(X,Y) \Leftarrow b_1(X, A_2)\land...\land b_n(A_n,Y)$$
 ![[Pasted image 20230328154743.png]]
 
 6. The [higher confidence score] of the rule that the path matches, the greater the corresponding [relation weight] obtained with the guidance of the rules. 
-7. Now, we can measure the [liklihood] of the path complement candidate set over all relations in each state, and the attention vector of each relation in the candidate set $w$ can be defined and normalized
-$$$$
-
-
-
+7. Now, we can measure the [likelihood] of the <u>path complement candidate set over all relations in each state</u>, and the <u>attention vector of each relation in the candidate set</u> $w$ can be defined and normalized as follows
+$$w = Softmax((\mathbb{I}+\mathbb{C}) \cdot MLP(s_t) \cdot [r_1 ... r_{|R|}])$$
+8. Select the top $x$ relations with the largest attention values in $w$ to form an additional relation set $R_add = {r^1, r^2, ... ,r^x}$ 
+9. Define parameter $threshold \in [0,1]$ to control the number of top $x$ relations of each entity needed.
+10. Sort using the rules of candidate set 

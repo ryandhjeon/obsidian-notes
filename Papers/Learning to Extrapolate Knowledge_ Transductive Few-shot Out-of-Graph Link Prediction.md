@@ -15,9 +15,22 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 ### Introduction
 
 1. [GNN]: Exploit the graph-structured data which works on a non-Euclidean domain. Mostly deals with simple graphs with unlabeled edges.
-2. [relation-aware GNNs]: Considers mluti-relational graphs with labels and directions on the edges.
+2. [Relation-aware GNNs]: Considers mluti-relational graphs with labels and directions on the edges.
 	- Natural language understanding
 	- Modeling protein structure
 	- Drug-drug interaction prediction
 	- Retrosynthesis planning
 
+*Challenges of link prediction for KGs*
+1. KGs dynamically evolve over time. Around 200 new entities emerge every day. Predicting links on the emerging (Unseen) entities pose a new challenge.
+2. Real-world KGs exhibit [long-tail distributions], where large portion of the entities have only few triplets. [Embedding-based methods] cannot embed unseen entities.
+
+*Propose Graph Extrapolation Networks (GENs)*
+- Few-shot Out-of-Graph(OOG) link prediction for emerging entities
+- Seen - Unseen && Unseen - Unseen
+- GENs are meta-learned to extrapolate the knowledge from seen to uness entities
+- Transfers knowledge from entities with many to few links. 
+- Meta-trains two GNNs to predict the links between entities
+	1. [Inductive GEN]: 1st GNN; learns to embed the unseen entities that are not observed, and predicts the links between seen and unseen entities.
+	2. [Transductive GEN]: 2nd GNN; learns to predict the links not only between seen and unseen entities, but also between unseen entities themselves.
+- Link prediction 

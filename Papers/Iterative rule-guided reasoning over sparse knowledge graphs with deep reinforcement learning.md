@@ -31,7 +31,7 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 
 - Rewards: If the agent reaches the correct target entity at the end of the search, a terminal reward of 1 or 0 otherwise. 
 
-- For more effcient <u>agent path searching</u>, design the specific agent reward function to achieve better performance.
+- For more effcient [agent path searching], design the specific [agent reward function] to achieve better performance.
 
 *Policy network*
 - Policy network is parameterized by state information, global context and the pathfinding history. 
@@ -47,7 +47,7 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 *Rule induction from the KG*
 - A rule head is denoted by r(...), rule body is denoted by the conjunction of atoms $b_1$(...), ... , $b_n$(...)
 
-- Quality of each rule is mesaured with its <u>confidence score</u>. #(x, y) denotes the number of facts corresponding to the condition.
+- Quality of each rule is mesaured with its [confidence score]. #(x, y) denotes the number of facts corresponding to the condition.
 ![[Pasted image 20230328140909.png]]
 
 - Example: For $$r_{target}(a,b) \Leftarrow r_1(a,e) \land r_2(b,e)$$, turn $r_2(b,e)$ into $r_{2}^{-1}(e,b)$, and as a result, $$r_{target} \Leftarrow (r_1, r_{2}^{-1})$$If $r_1 \to r_{2}^{-1}$, could be composed as $r_{target}$ if a path satisfies the sequence of relations
@@ -79,7 +79,7 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 - Strategy dynamically allocates additional space to augment the original action space of the RL agent. Uses the RL agent with the rule guidance during the reasoning process. 
 
 - The candidate set of additional actions: $$C_t = {(r,e)|r \in R \land e \in \mathcal{E} \land (e_t, r, e) \notin \mathcal{T} }$$
-- $C_t$ is too large, as it is obtained by means of actions in $C_t$, so we adopt an approximate <u>pruning strategy</u>. 
+- $C_t$ is too large, as it is obtained by means of actions in $C_t$, so we adopt an approximate [pruning strategy]. 
  ![[Pasted image 20230328151017.png]]
 
 **Pruning strategy**
@@ -91,10 +91,14 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 - [Global information extraction]: Activity of obtaining the rules and corresponding confident scores. 
 	- This helps RL agent to make decisions with the guidance from an overview of the KG. 
 	- Higher [rule guidance rewards] is given to the path sequence that follows the logic rules. This guides the selection of additional action space, so that the path of completion more consistent with [global information].
-- 
 
-
-
+**Dynamic Completion Steps**
+1. When query $(e_s, r_q, ?)$ is given, RL agent is applied to explore over the KG environment.
+2. When RL agent encounters the missing path in entity $i$, the [mined rules] are retrieved. 
+3. If there exists the rule that its head matching query $q$, the rule $R_t$ and its [corresponding confidence score] is obtained.
+$$R_t : r_{q}^{rule}(X,Y) \Leftarrow b_1(X, A_2)\land...\land b_n(A_n,Y)$$
+4. If more than one rule is satisfied simultaneously, both rules are activated, and assume that the single rule that has [higher confident score] is activated to compose the path.
+5. To guide 
 
 
 

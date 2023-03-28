@@ -118,5 +118,15 @@ $$
 11. For every relation $r^i \in R_{add}$ and the current entity $e_t$, [pretrained embedding model] is used to further predict the probability distribution of the tail entity for the triple query $(e_t, r^i, ?)$ as $P(e|r^i, s_t)$ 
 12. Keep only $k$ entities with the highest probabilities to form $k$ additional actions for triple query $(e_t, r_q, ?)$
 13. Finally, All additional actions make up the additional action space $A_t^{add}$ for $s_t$
-14. The number of additional action spaces $N_{add} = kx$
-15. 
+14. The number of additional action spaces $N_{add} = kx$, 
+	-  Top $k$ entities, Top $x$ relations
+15. Additional action space $A_t^{add}$ is dynamically expanded for every state $s_t$ with the guidance of the rules.
+16. And the $A_t^{add}$ will be appended to the original action space $A_t$ to compose a new larger action space.
+$$A_t = A_t + A_t^{add}$$
+
+*Iterative rule guidance*
+- Alleviate the sparse reward problem, by combining global and local information for KG reasoning.
+
+- [Rule induction] : Apply [[AnyBURL]] model to extract the rules with high confidence scores in the given KG, and convert them to structured chain rules. 
+
+- [Fact inference] : 

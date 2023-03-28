@@ -82,7 +82,8 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 - $C_t$ is too large, as it is obtained by means of actions in $C_t$, so we adopt an approximate <u>pruning strategy</u>. 
  ![[Pasted image 20230328151017.png]]
 
-1. Filter 
+<u>Pruning strategy</u>
+1. Filter out <u>relations with the highest probability</u> using $P(r|s_t)$, and then select <u>entities with the highest probability</u> 
 
 
 

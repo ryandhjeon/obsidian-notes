@@ -33,4 +33,10 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 - Meta-trains two GNNs to predict the links between entities
 	1. [Inductive GEN]: 1st GNN; learns to embed the unseen entities that are not observed, and predicts the links between seen and unseen entities.
 	2. [Transductive GEN]: 2nd GNN; learns to predict the links not only between seen and unseen entities, but also between unseen entities themselves.
-- Link prediction 
+- Link prediction for unseen entities is unreliable, which gets worse when few triplets are available for each entitiy. 
+- [Stochastic embedding] is used to learn the distribution of unseen representations for stochastic embeeding to account for the [uncertainty]
+- [Transfer learning strategy] to model the long-tail distribution. Leads GEN to represent the unseen entities that are well aligned with the seen entities
+
+*Link prediction goal*
+- Entitiy prediction
+- Relation prediction

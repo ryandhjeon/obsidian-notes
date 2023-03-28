@@ -69,7 +69,16 @@ $$R_h = \mathbb{I}(\epsilon \in KG) + (1-\mathbb{I}(\epsilon \in KG))f(\epsilon)
 
 - $\mathbb{I}$ is an indicator function, $f(\epsilon)$ is a composition function for reward shaping using embeddings
 
-- 
+- Final reward function, $R_{total}$ combines the $R_r$ and $R_h$ using a constant factor $\lambda$
+$$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$ 
+![[Pasted image 20230328144918.png]]
+
+*Dynamic Path Completion*
+- Sparse KG, the performance of the model during reasoning reduces significantly.
+
+- Strategy dynamically allocates additional space to augment the original action space of the RL agent. Uses the RL agent with the rule guidance during the reasoning process. 
+
+- The candidate set of additional actions: $$C_t = {(r,e)|r \in R \land e \in \varepsilon }$$ 
 
 
 

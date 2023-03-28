@@ -125,7 +125,7 @@ $$
 $$A_t = A_t + A_t^{add}$$
 
 *Iterative rule guidance*
-- Alleviate the sparse reward problem, by combining global and local information for KG reasoning.
+- Alleviate the [sparse reward problem], by <u>combining global and local information</u> for KG reasoning.
 
 - [Rule induction] : Apply [[AnyBURL]] model to extract the rules with high confidence scores in the given KG, and convert them to structured chain rules. 
 

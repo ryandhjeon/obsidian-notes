@@ -30,3 +30,14 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 - Transition: Set the maximum hop count to $T$, and if the agent cannot reach the target within the limit, the transition will terminate at the state $s_t$. 
 
 - Rewards: If the agent reaches the correct target entity at the end of the search, a terminal reward of 1 or 0 otherwise. 
+
+- For more effcient <u>agent path searching</u>, design the specific agent reward function to achieve better performance.
+
+*Policy network*
+- Policy network is parameterized by state information, global context and the pathfinding history. 
+
+- Action $a_t$ is represented as the concatenation of the relation embedding $r \in {R^d}$  and target entity embedding $e \in {R^d}$ where every entity and relation in the KG is assigned a dense vector embedding with the same dimension d. 
+
+- $h_t$ covers the sequence of observations and actions. $h_t$ = LSTM($h_{t-1}, a_{t-1}$)
+
+- Encode the action space by stacking the embeddings of all actions in $A_t: A_t \in {R^d}$

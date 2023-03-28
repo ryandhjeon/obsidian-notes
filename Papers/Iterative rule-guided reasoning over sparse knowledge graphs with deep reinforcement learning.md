@@ -107,4 +107,16 @@ $$R_t : r_{q}^{rule}(X,Y) \Leftarrow b_1(X, A_2)\land...\land b_n(A_n,Y)$$
 $$w = Softmax((\mathbb{I}+\mathbb{C}) \cdot MLP(s_t) \cdot [r_1 ... r_{|R|}])$$
 8. Select the top $x$ relations with the largest attention values in $w$ to form an additional relation set $R_add = {r^1, r^2, ... ,r^x}$ 
 9. Define parameter $threshold \in [0,1]$ to control the number of top $x$ relations of each entity needed.
-10. Sort using the rules of candidate set 
+10. Sort using the [rules of candidate set] with the [confidence scores] in <u>reverse order</u>, select the first $k$ rules whose sum is just less than the threshold.
+$$
+\begin{cases}
+	conf_1 + conf_2 + ... + conf_{x-1} \leq threshold\\
+	conf_1 + conf_2 + ... + conf_{x-1} > threshold
+\end{cases}
+$$
+			$conf_i$ is confidence of corresponding rule.
+11. For every relation $r^i \in R_{add}$ and the current entity $e_t$, [pretrained embedding model] is used to further predict the probability distribution of the tail entity for the triple query $(e_t, r^i, ?)$ as $P(e|r^i, s_t)$ 
+12. Keep only $k$ entities with the highest probabilities to form $k$ additional actions for triple query $(e_t, r_q, ?)$
+13. Finally, All additional actions make up the additional action space $A_t^{add}$ for $s_t$
+14. The number of additional action spaces $N_{add} = kx$
+15. 

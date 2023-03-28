@@ -50,4 +50,20 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 - Quality of each rule is mesaured with its <u>confidence score</u>. #(x, y) denotes the number of facts corresponding to the condition.
 ![[Pasted image 20230328140909.png]]
 
-- 
+- Example: For $$r_{target}(a,b) \Leftarrow r_1(a,e) \land r_2(b,e)$$, turn $r_2(b,e)$ into $r_{2}^{-1}(e,b)$, and as a result, $$r_{target} \Leftarrow (r_1, r_{2}^{-1})$$If $r_1 \to r_{2}^{-1}$, could be composed as $r_{target}$ if a path satisfies the sequence of relations
+
+*Reward design*
+- 2 parts for the reward mechanism of an agent
+
+1. Rule guidance reward $R_r$
+2. Hit target reward $R_h$
+
+
+
+
+
+
+
+
+
+

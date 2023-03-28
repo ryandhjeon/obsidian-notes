@@ -60,11 +60,11 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 
 - If the path inferred by the RL agent matches any of the preceding logic rules retrieved from the rule miner, the corresponding score of the rule is added to the total reward as a rule guidance reward $R_r$
 
-- Additionally, add a Laplace smoothing, $p_c = 5$ for the confidence score with the final **rule guidance reward** $R_r$
+- Additionally, add a Laplace smoothing, $p_c = 5$ for the confidence score with the final [rule guidance reward] $R_r$
 
-- $R_h$ **hit target reward**, rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
+- $R_h$: [hit target reward], rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
 
-- Otherwise, for **soft reward** whose correctness is unknown, the embedding function of $\epsilon$ is used to measure the reward as a hit target reward $R_h$
+- Otherwise, for [soft reward] whose correctness is unknown, the embedding function of $\epsilon$ is used to measure the reward as a hit target reward $R_h$
 $$R_h = \mathbb{I}(\epsilon \in KG) + (1-\mathbb{I}(\epsilon \in KG))f(\epsilon)$$
 
 - $\mathbb{I}$ is an indicator function, $f(\epsilon)$ is a composition function for reward shaping using embeddings
@@ -82,13 +82,15 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 - $C_t$ is too large, as it is obtained by means of actions in $C_t$, so we adopt an approximate <u>pruning strategy</u>. 
  ![[Pasted image 20230328151017.png]]
 
-<u>Pruning strategy</u>
-1. Filter out <u>relations with the highest probability</u> using $P(r|s_t)$, and then select <u>entities with the highest probability</u> 
+**Pruning strategy**
+1. Filter out <u>relations with the highest probability</u> using $P(r|s_t)$
+2. Then select <u>entities with the highest probability</u> for the filtered relations using $P(e|r, s_t)$
+3. Now the model prefers the relation $r$ that are <u>frequently occurred rather</u> than considering the <u>joint probability of the action</u>. 
+4. Use dropout technique. It masks some outgoing relations randomly for the RL agent in the sampling step of REINFORCE, which gives randomized search effect.
 
+- **Global information extraction**: The rules and corresponding confident scores are obtained. This helps RL agent to make decisions with the guidance from an overview of the KG. 
 
-
-
-
+- Higher [rule guidance rewards]
 
 
 

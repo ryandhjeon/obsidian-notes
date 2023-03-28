@@ -98,11 +98,13 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 3. If there exists the rule that its head matching query $q$, the rule $R_t$ and its [corresponding confidence score] is obtained.
 $$R_t : r_{q}^{rule}(X,Y) \Leftarrow b_1(X, A_2)\land...\land b_n(A_n,Y)$$
 4. If more than one rule is satisfied simultaneously, both rules are activated, and assume that the single rule that has [higher confident score] is activated to compose the path.
-5. To guide 
+5. To guide the [path search] dynamically with the rules, the matrix $\mathbb{C}^{|R|\times|R|}$ and identity matrix $\mathbb{I}^{|R|\times|R|}$ are constructed for the entity. They represent the additional guidance of the rules and the normal relations. If the rule atom $b$ match the relation sequence $r$ of the reasoning path, the [confidence score] of the corresponding rule to the value of $c_{ij} \in \mathbb{C}$ is assigned.
 
+![[Pasted image 20230328154743.png]]
 
-
-
+6. The [higher confidence score] of the rule that the path matches, the greater the corresponding [relation weight] obtained with the guidance of the rules. 
+7. Now, we can measure the [liklihood] of the path complement candidate set over all relations in each state, and the attention vector of each relation in the candidate set $w$ can be defined and normalized
+$$$$
 
 
 

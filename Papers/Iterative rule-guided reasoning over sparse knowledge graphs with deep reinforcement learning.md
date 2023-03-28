@@ -58,6 +58,22 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 1. Rule guidance reward $R_r$
 2. Hit target reward $R_h$
 
+- If the path inferred by the RL agent matches any of the preceding logic rules retrieved from the rule miner, the corresponding score of the rule is added to the total reward as a rule guidance reward $R_r$
+
+- Additionally, add a Laplace smoothing, $p_c = 5$ for the confidence score with the final **rule guidance reward** $R_r$
+
+- $R_h$ **hit target reward**, rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
+
+- Otherwise, for **soft reward** whose correctness is unknown, the embedding function of $\epsilon$ is used to measure the reward as a hit target reward $R_h$
+
+
+
+
+
+
+
+
+
 
 
 

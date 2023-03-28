@@ -78,7 +78,11 @@ $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$
 
 - Strategy dynamically allocates additional space to augment the original action space of the RL agent. Uses the RL agent with the rule guidance during the reasoning process. 
 
-- The candidate set of additional actions: $$C_t = {(r,e)|r \in R \land e \in \mathcal{E} \land (e_t, r, e) \notin \mathcal{T} }$$ 
+- The candidate set of additional actions: $$C_t = {(r,e)|r \in R \land e \in \mathcal{E} \land (e_t, r, e) \notin \mathcal{T} }$$
+- $C_t$ is too large, as it is obtained by means of actions in $C_t$, so we adopt an approximate <u>pruning strategy</u>. 
+ ![[Pasted image 20230328151017.png]]
+
+1. Filter 
 
 
 

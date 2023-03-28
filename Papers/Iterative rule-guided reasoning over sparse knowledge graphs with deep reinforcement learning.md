@@ -23,4 +23,10 @@ In recent years, reasoning over knowledge graphs (KGs) has been widely adapted t
 
 - MDP supplies a mathematical framework for modeling sequential decision process with the interaction between the RL agent and the KG environment. 
 
-- States: We want to implement the state that encodes the observed information as much as possible. 
+- States: We want to implement the state that encodes the observed information as much as possible. Multi-hop reasoning process considers; corrent entity $e_t$, query relation $r_q$, previous historical reasoning process $h_t$.
+
+- Actions: The set of possible actions. $A$ of step $t$ consists of the outgoing edges of $e_t$ in KGs. A 'self-loop' edge is appended to every $A_t$, as the search process is within a given step, acting as a 'stop' action.
+
+- Transition: Set the maximum hop count to $T$, and if the agent cannot reach the target within the limit, the transition will terminate at the state $s_t$. 
+
+- Rewards: If the agent reaches the correct target entity at the end of the search, a terminal reward of 1 or 0 otherwise. 

@@ -1,4 +1,4 @@
-# Transductive Few-shot learning for  Multi-hop graph reasoning
+# Proposal: Transductive Few-shot learning for  Multi-hop graph reasoning
 
 The embedding based methods usually assume that a sufficient number of associative triplets exist for training and cannot embed unseen entities. Thus, they are highly suboptimal for learning and inference on evolving real-world graph. When new triplets or subgraphs emerges, we can meta-learn the small number of seen entities to extrapolate the knowledge and transfer knowledge from known entities to incoming entities. Given embeddings of the seen entities for a multi-relational graph, we can meta-train GNN to predict the links between seen-to-unseen, and unseen-to-unseen entities. Then, we can meta-test on the unseen entities and generate embeddings without re-training the entire model from scratch. After construction of the representation of each unseen entity, we can perform the link prediction.
 

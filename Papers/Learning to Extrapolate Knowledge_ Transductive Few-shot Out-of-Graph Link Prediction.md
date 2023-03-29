@@ -43,7 +43,7 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 
 *Learning to Extrapolate Knowledge with Graph Extrapolation Networks*
 - Training for 'seen-to-seen' work well on 'seen-to-unseen' cases?
-	- No, they are suboptimal in handling unseen entities. Use [meta learning] framework to handle the OOG link prediction problem. Train a model over a <u>distribution of tasks</u> such that the model generalizes well on unseen tasks.
+	- No, they are suboptimal in handling unseen entities. Use [meta learning] framework to handle the OOG link prediction problem, whose goal is to train a model over a <u>distribution of tasks</u> such that the model generalizes well on unseen tasks.
 
 **Learning Objective**
 - Maximize the score of a true triplet $s(e_h, r, e_t)$ that contains any unseen entities $e'$ to rank it higher than all the other false triplets, with embedding and score function parameters $\theta$ denoted as follows:
@@ -52,7 +52,7 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 
 **Meta-Learning Framework**
 - We can formulate a set of tasks such that the model learns to generalize over unseen entities, which are simulated using seen entities.
-1. <u>Randomly split</u> the entities in a given graph into the [meta-training set] for simulated unseen entities, and the [meta-test set] for real unseen entities
+1. <u>Randomly split</u> the entities in a given graph into the [meta-training set] for simulated <u>unseen entities</u>, and the [meta-test set] for <u>real unseen entities</u>
 2. Generate a task by <u>sampling the set of simulated unseen entities</u> during meta-training, for the learned model to generalize over actual unseen entities.
 3. Each task $\mathcal{T}$ over a distribution $p(\mathcal{T})$ corresponds to a set of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ with a predefined number of instances $|\mathcal{E_T}| = N$
 4. Divide the triplets associative with each entity $\mathcal{e_{i}' \in \mathcal{E_T}}$ into the [support set] $S_i$ and the [query set] $\mathcal{Q_i}: \mathcal{T} = \bigcup^{N}_{i=1} S_i \cup \mathcal{Q_i}$

@@ -76,5 +76,13 @@ $$f_{\theta}(S_i) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W_rC_{r,e}$$
 
 **Transductive Meta-Learning of GENs (T-GEN**
 - Drawback of [Inductive GEN]: Does not consider the relationships between unseen entities.
-- We add one more GEN layer $g_{\theta}(\cdot)$, which is similar to [inductive meta-learner] $f_{\theta}(\cdot)$
-- 
+- We add one more GEN layer $g_{\theta}(\cdot)$ to consider inter-relationships between unseen entities.
+
+$$g_{\theta}(S_i, \phi) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W'_rC_{r,e} + W_0\phi_i$$
+
+- $W_0 \in \mathbb{R}^{d\times d}$  is a weight matrix for the self-connection to consider the embedding $\phi_i$ which is updated by the [previous inductive layer] $f_{\theta}(S_i)$
+- Transductive layer $g_{\theta}(\cdot)$ aggregates the representation across all the neighbors with a weight matrix $W'_r \in \mathbb{R}^{d\times 2d}$  where neighbors can include the unseen entities with embeddings $\phi$, rather than treating them as noises or ignoring them as zero vectors like [inductive scheme].
+
+**Stochastic Inference**
+- A [naive transductive GEN] generalizes to the unseen entities by simulating them with the seen entities during meta-training.
+- However, due to the intrinsic unreliability of [OOG] with each entity having only few triplets, there could be high uncertainties on the representations of unseen entities.

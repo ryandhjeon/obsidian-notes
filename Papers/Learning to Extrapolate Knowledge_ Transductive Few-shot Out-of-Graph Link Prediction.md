@@ -55,8 +55,7 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 1. <u>Randomly split</u> the entities in a given graph into the [meta-training set] for simulated unseen entities, and the [meta-test set] for real unseen entities
 2. Generate a task by <u>sampling the set of simulated unseen entities</u> during meta-training, for the learned model to generalize over actual unseen entities.
 3. Each task $\mathcal{T}$ over a distribution $p(\mathcal{T})$ corresponds to a set of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ with a predefined number of instances $|\mathcal{E_T}| = N$ 
-4. Divide the triplets associative with each entity $\mathcal{e_{i}' \in \mathcal{E_T}}$ into the [support set] $S_i$ and the query set $\mathcal{Q_i}: \mathcal{T} = \bigcup^{N}_{i=1} S_i \cup \mathcal{Q_i}$
-5. 
+4. Divide the triplets associative with each entity $\mathcal{e_{i}' \in \mathcal{E_T}}$ into the [support set] $S_i$ and the [query set] $\mathcal{Q_i}: \mathcal{T} = \bigcup^{N}_{i=1} S_i \cup \mathcal{Q_i}$
 
 - Meta-objective: Learning to represent the [unseen entities] as $\phi$ using a [support set] $S$ with a [meta-function] $f$, to maximize the triplet score on a [query set] $\mathcal{Q}$ with a [score function] $s$ as follows:
 ![[Pasted image 20230328220849.png]]
@@ -65,7 +64,7 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 
 **Inductive Graph Extrapolation Networks (I-GEN)**
 - GNN-based meta-learner that ouputs the representation of unseen entities.
-- Extrapolates knowledge of a given graph $\mathcal{G}$ to an unseen entity $e_{i}'$ through a support set $S_i$. We formulate $f_{\theta}(\cdot)$ as follows.
+- Extrapolates knowledge of a given graph $\mathcal{G}$ to an unseen entity $e_{i}'$ through a [support set] $S_i$. We formulate $f_{\theta}(\cdot)$ as follows.
 
 $$f_{\theta}(S_i) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W_rC_{r,e}$$
 
@@ -99,4 +98,9 @@ $$s(e_h, r, e_t) = \frac{1}{L} \sum_{l=1}^{L} s(e_h, r, e_t;\phi^{'(l)},\theta),
 - Final GEN is trained for both the inductive and transductive steps with stochastic inference
 
 **Loss function**
-- Training: Represent the embeddings of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ consists of a [support set] and [query set]
+- Each task $\mathcal{T}$ that corresponds to a set of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ consists of a [support set] and [query set]: $\mathcal{T = {S, \mathcal{Q}}}$
+- During [training], represent the embeddings of unseen entities $e'_i \in \mathcal{E_T}$ using the support set $S$ with [GENs]
+- During [testing], use the [true labeled query set] $\mathcal{Q_i}$ to optimize [GENs] 
+- Every query set contains only [positive triplets], perform [negative sampling] to update a meta-learner by allowing it to distinguish positive from negative triplets.
+- Specifically, replace the entity of each triplet in the [query set] $\mathcal{Q^{-}_i} = {(e'_i, r, e^-) \text { or } (e^-, r, e'_i) | e}$ where $e^-$ is the corrupted entity.
+- 

@@ -62,13 +62,19 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 - Once the model is trained with the [meta-training tasks] $\mathcal{T_train}$, we can apply it to [unseen meta-test tasks] $\mathcal{T_test}$. The set of entities is disjoint from $\mathcal{T_train}$. 
 ![[Pasted image 20230328221338.png]]
 
-**Graph Extrapolation Networks**
+**Inductive Graph Extrapolation Networks (I-GEN)**
 - GNN-based meta-learner that ouputs the representation of unseen entities.
-- Extrapolates knowledge of a given graph $\mathcal{G}$ to an unseen entity $e_{i}'$ through a support set $S_i$
-![[Pasted image 20230328221623.png]]
+- Extrapolates knowledge of a given graph $\mathcal{G}$ to an unseen entity $e_{i}'$ through a support set $S_i$. We formulate $f_{\theta}(\cdot)$ as follows.
+
+$$f_{\theta}(S_i) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W_rC_{r,e}$$
 
 - $n(\cdot)$ is a set of neighboring entities and relations
 - $n(S_i) = {(r,e)|(e_{i}',r,e) \text{ or } (e,r,e_{i}') \in S_i}$
 - $K$ is a size of $n(S_i)$
 - $W_r \in \mathbb{R}^{d\times 2d}$ is a relation-specific transformation matrix that is meta-learned
-- $C_{r,e}$
+- $C_{r,e} \in \mathbb{R}^{2d}$ is a concatenation of feature representation of the relation-entity pair.
+
+**Transductive Meta-Learning of GENs (T-GEN**
+- Drawback of [Inductive GEN]: Does not consider the relationships between unseen entities.
+- We add one more GEN layer $g_{\theta}(\cdot)$, which is similar to [inductive meta-learner] $f_{\theta}(\cdot)$
+- 

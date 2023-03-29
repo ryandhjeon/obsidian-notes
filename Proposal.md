@@ -28,7 +28,7 @@ In sparse KGs, there are insufficient evidential paths between head and tail ent
 - To avoid the dying ReLU, LeakyReLU with negative input slope $\alpha = 0.01$ is used as nonlinearity
 
 *Reward design*
-- Hit target reward $R_h$
+- Hit target reward $R_h$ 
 
 - $R_h$: [hit target reward], rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
 

@@ -71,7 +71,7 @@ $$R_h = \mathbb{I}(\epsilon \in KG) + (1-\mathbb{I}(\epsilon \in KG))f(\epsilon)
 
 - Final reward function, $R_{total}$ combines the $R_r$ and $R_h$ using a constant factor $\lambda$
 $$\lambda : R_{total} = \lambda R_r + (1-\lambda)R_h$$ 
-![[Pasted image 20230328144918.png]]
+![[Pasted image 20230329104111.png]]
 
 *Dynamic Path Completion*
 - Sparse KG, the performance of the model during reasoning reduces significantly.

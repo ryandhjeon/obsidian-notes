@@ -1,5 +1,22 @@
 # Proposal: Transductive Few-shot learning for  Multi-hop graph reasoning
 
+We propose to develop a deep learning-based KG completion model for two tasks:
+1) KG reasoning by KG completion for ADs potential treatment prediction
+2) Efficient KG update
+
+Additionally, KG completion aims to infer missing triplets by reasoning the information already present in the KG. KG update aims to incorporate new entities or relations to an existing graph.
+
+Generally, most KGs tend to be incomplete and outdated. For the incompleteness, large KGs naturally contain a lot of missing relations due to distant and implicit relationships between entities. Moreover, most KGs quickly become outdated after the initial construction due to the high cost of synchronizing new knowledge. In this project, we propose a deep learning-based algorithm for KG reasoning and efficient KG update for large KGs.
+
+Primarily, we propose a multi-hop with auto-connection algorithm to capture distant and implicit missing relations in a large KG.
+
+Traditionally, Path Ranking Algorithm (PRA)-based models are effective but often experience two challenges with large KGs.
+1) Search space explosion (path explode due to the large size of entities and relations)
+2) Poor representation of semantic information in a discrete space
+
+Therefore, the proposed algorithm adopts Meta-learning and Reinforcement Learning (RL) to ease the pain of traditional methods. 
+
+Automatically completing knowledge graphs, which is known as the link prediction task is widely tackled 
 The embedding based methods usually assume that a sufficient number of associative triplets exist for training and cannot embed unseen entities. Thus, they are highly suboptimal for learning and inference on evolving real-world graph. When new triplets or subgraphs emerges, we can meta-learn the small number of seen entities to extrapolate the knowledge and transfer knowledge from known entities to incoming entities. Given embeddings of the seen entities for a multi-relational graph, we can meta-train GNN to predict the links between seen-to-unseen, and unseen-to-unseen entities. Then, we can meta-test on the unseen entities and generate embeddings without re-training the entire model from scratch. After construction of the representation of each unseen entity, we can perform the link prediction.
 
 Yet, even though we might have inferred the new triplets to the original knowledge graph, we cannot explain what relationships the entities have with each other. To do that, we run the multi-hop reasoning process.

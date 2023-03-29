@@ -42,4 +42,11 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 - Relation prediction
 
 *Learning to Extrapolate Knowledge with Graph Extrapolation Networks*
-- 
+- Training for 'seen-to-seen' work well on 'seen-to-unseen' cases?
+	- No. Use [meta learning] framdework to handle the OOG link prediction problem. Train a model over a <u>distribution of tasks</u> such that the model generalizes well on unseen tasks.
+
+**Learning Objective**
+- Maximize the score of a true triplet $s(e_h, r, e_t)$ that contains any unseen entities $e'$ to rank it higher than all the other false triplets, with embedding and score function parameters $\theta$ denoted as follows:
+![[Pasted image 20230328215106.png]]
+
+

@@ -6,7 +6,7 @@ Yet, even though we might have inferred the new triplets to the original knowled
 
 Here, I follow the Dynamic Anticipation and Dynamic Completion step that DacKGR used. During the Dynamic Anticipation, we use the prediction information from the meta-learned model to get the probability vector of all entities being the tail entity. 
 
-In sparse KGs, there are insufficient evidential paths between head and tail entities During the Dynamic Completion step, we use path based method to get the essential supporting paths over KG as evidences of the reasoning results. The multi-hop sequential reasoning in the KG can be modeled as a Markov decision process(MDP). The framework consists of states $S$, actions $\mathcal A$, transition $\sigma$, rewards $\mathcal R$, and a policy network p.
+In sparse KGs, there are insufficient evidential paths between head and tail entities. During the Dynamic Completion step, the action space of each entity is dynamically augemented during reasoning process. We use path based method to get the essential supporting paths over KG as evidences of the reasoning results. The multi-hop sequential reasoning in the KG can be modeled as a Markov decision process(MDP). The framework consists of states $S$, actions $\mathcal A$, transition $\sigma$, rewards $\mathcal R$, and a policy network p.
 
 - States: We want to implement the state that encodes the observed information as much as possible. Multi-hop reasoning process considers; current entity $e_t$, query relation $r_q$, previous historical reasoning process $h_t$.
 
@@ -27,13 +27,12 @@ In sparse KGs, there are insufficient evidential paths between head and tail ent
 
 - To avoid the dying ReLU, LeakyReLU with negative input slope $\alpha = 0.01$ is used as nonlinearity
 
+*Reward design*
+- Hit target reward $R_h$
 
+- $R_h$: [hit target reward], rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
 
-###### Reference
-
-
-
-
-
-
-
+*Datasets*
+FB15K-237-10%
+FB15K-237-20%
+FB15K-237-50%

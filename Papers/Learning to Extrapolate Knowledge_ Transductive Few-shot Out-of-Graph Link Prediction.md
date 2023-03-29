@@ -40,3 +40,6 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 *Link prediction goal*
 - Entitiy prediction
 - Relation prediction
+
+*Learning to Extrapolate Knowledge with Graph Extrapolation Networks*
+- 

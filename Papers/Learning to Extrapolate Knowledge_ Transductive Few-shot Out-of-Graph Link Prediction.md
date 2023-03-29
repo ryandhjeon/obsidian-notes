@@ -55,4 +55,9 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 1. <u>Randomly split</u> the entities in a given graph into the [meta-training set] for simulated unseen entities, and the [meta-test set] for real unseen entities
 2. Generate a task by <u>sampling the set of simulated unseen entities</u> during meta-training, for the learned model to generalize over actual unseen entities.
 3. Each task $\mathcal{T}$ over a distribution $p(\mathcal{T})$ corresponds to a set of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ with a predefined number of instances $|\mathcal{E_T}| = N$ 
-4. Divide the triplets associative with each entity
+4. Divide the triplets associative with each entity $\mathcal{e_{i}' \in \mathcal{E_T}}$ into the support set $S_i$ and the query set ![[Pasted image 20230328220410.png]]
+
+- Meta-objective: Learning to represent the unseen entities as $\phi$ using a suppor set $S$ with a meta-function $f$, to maximize the triplet score on a query set $\mathcal{Q}$ with a score function $s$ as follows:
+![[Pasted image 20230328220849.png]]
+- Once the model is trained with the [meta-training tasks] $\mathcal{T_train}$, we can apply it to [unseen meta-test tasks] $\mathcal{T_test}$. The set of entities is disjoint from $\mathcal{T_train}$. 
+- 

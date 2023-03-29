@@ -65,12 +65,12 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 - Once the model is trained with the [meta-training tasks] $\mathcal{T_train}$, we can apply it to [unseen meta-test tasks] $\mathcal{T_test}$. The set of entities is disjoint from $\mathcal{T_train}$. 
 ![[Pasted image 20230328221338.png]]
 
+![[Pasted image 20230329115557.png]]
+
 **Inductive Graph Extrapolation Networks (I-GEN)**
 - GNN-based meta-learner that ouputs the representation of unseen entities.
-- Extrapolates knowledge of a given graph $\mathcal{G}$ to an unseen entity $e_{i}'$ through a [support set] $S_i$. We formulate $f_{\theta}(\cdot)$ as follows.
-
+- Extrapolates knowledge of a [given graph] $\mathcal{G}$ to an [unseen entity] $e_{i}'$ through a [support set] $S_i$. We formulate $f_{\theta}(\cdot)$ as follows.
 $$f_{\theta}(S_i) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W_rC_{r,e}$$
-
 - $n(\cdot)$ is a set of neighboring entities and relations
 - $n(S_i) = {(r,e)|(e_{i}',r,e) \text{ or } (e,r,e_{i}') \in S_i}$
 - $K$ is a size of $n(S_i)$
@@ -80,9 +80,7 @@ $$f_{\theta}(S_i) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W_rC_{r,e}$$
 **Transductive Meta-Learning of GENs (T-GEN)**
 - Drawback of [Inductive GEN]: Does not consider the relationships between unseen entities.
 - We add one more GEN layer $g_{\theta}(\cdot)$ to consider inter-relationships between unseen entities.
-
 $$g_{\theta}(S_i, \phi) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W'_rC_{r,e} + W_0\phi_i$$
-
 - $W_0 \in \mathbb{R}^{d\times d}$  is a weight matrix for the self-connection to consider the embedding $\phi_i$ which is updated by the [previous inductive layer] $f_{\theta}(S_i)$
 - Transductive layer $g_{\theta}(\cdot)$ aggregates the representation across all the neighbors with a weight matrix $W'_r \in \mathbb{R}^{d\times 2d}$  where neighbors can include the unseen entities with embeddings $\phi$, rather than treating them as noises or ignoring them as zero vectors like [inductive scheme].
 

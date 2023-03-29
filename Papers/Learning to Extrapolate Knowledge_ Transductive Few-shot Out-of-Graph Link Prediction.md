@@ -87,4 +87,9 @@ $$g_{\theta}(S_i, \phi) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W'_rC_{r,e} + W_0\p
 - A [naive transductive GEN] generalizes to the unseen entities by simulating them with the seen entities during meta-training.
 - However, due to the intrinsic unreliability of [OOG] with each entity having only few triplets, there could be <u>high uncertainties</u> on the representations of unseen entities.
 - To model uncertainties, stochastically embed the unseen entities by learning the distribution over an unseen entity embedding $\phi'_{i}$ . 
-- Approximate the posterior using $q(\phi'_{i}|S_i,\phi) = N(\phi'_{i}|\mu_i,\text{})$ 
+- Approximate the posterior using $q(\phi'_{i}|S_i,\phi) = N(\phi'_{i}|\mu_i,\text{diag}(\sigma_i^2))$ 
+- Then compute the mean and variance via [two individual transductive GEN layers] $\mu_i = g_{\theta_{\mu}}(S_i,\phi)$  and $\sigma_i = g_{\theta_{\sigma}}(S_i,\phi)$, which modifies the GraphVAE to our setting
+- Maximize the score function $s$
+$$s(e_h, r, e_t) = \frac{1}{L} \sum_{l=1}^{L} s(e_h, r, e_t;\phi^{'(l)},\theta), \;\;\; \phi^{'(l)}\sim q(\phi'|S,\phi)$$
+- Set MC samples size to $L=1$ during [meta-training] for computational effciency
+- Set large sample size ($L=10$) for MC approximation 

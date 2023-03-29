@@ -109,4 +109,6 @@ $$s(e_h, r, e_t) = \frac{1}{L} \sum_{l=1}^{L} s(e_h, r, e_t;\phi^{'(l)},\theta),
 
 **Meta-Learning for Long-Tail Tasks**
 - Real-world graphs follow the long-tail distributions
-- It's benefitial to transfer the knowledge from entitie
+- It's benefitial to transfer the knowledge from entities with many links to entities with few links
+- Start to learn the model with many shot cases, then gradually decrease the number of shots to few shot cases in a logarithmic scale
+

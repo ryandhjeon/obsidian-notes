@@ -57,7 +57,7 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 3. Each task $\mathcal{T}$ over a distribution $p(\mathcal{T})$ corresponds to a set of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ with a predefined number of instances $|\mathcal{E_T}| = N$ 
 4. Divide the triplets associative with each entity $\mathcal{e_{i}' \in \mathcal{E_T}}$ into the support set $S_i$ and the query set ![[Pasted image 20230328220410.png]]
 
-- Meta-objective: Learning to represent the unseen entities as $\phi$ using a suppor set $S$ with a meta-function $f$, to maximize the triplet score on a query set $\mathcal{Q}$ with a score function $s$ as follows:
+- Meta-objective: Learning to represent the [unseen entities] as $\phi$ using a [support set] $S$ with a [meta-function] $f$, to maximize the triplet score on a [query set] $\mathcal{Q}$ with a [score function] $s$ as follows:
 ![[Pasted image 20230328220849.png]]
 - Once the model is trained with the [meta-training tasks] $\mathcal{T_train}$, we can apply it to [unseen meta-test tasks] $\mathcal{T_test}$. The set of entities is disjoint from $\mathcal{T_train}$. 
 ![[Pasted image 20230328221338.png]]
@@ -74,7 +74,7 @@ $$f_{\theta}(S_i) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W_rC_{r,e}$$
 - $W_r \in \mathbb{R}^{d\times 2d}$ is a relation-specific transformation matrix that is meta-learned
 - $C_{r,e} \in \mathbb{R}^{2d}$ is a concatenation of feature representation of the relation-entity pair.
 
-**Transductive Meta-Learning of GENs (T-GEN**
+**Transductive Meta-Learning of GENs (T-GEN)**
 - Drawback of [Inductive GEN]: Does not consider the relationships between unseen entities.
 - We add one more GEN layer $g_{\theta}(\cdot)$ to consider inter-relationships between unseen entities.
 
@@ -85,4 +85,6 @@ $$g_{\theta}(S_i, \phi) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W'_rC_{r,e} + W_0\p
 
 **Stochastic Inference**
 - A [naive transductive GEN] generalizes to the unseen entities by simulating them with the seen entities during meta-training.
-- However, due to the intrinsic unreliability of [OOG] with each entity having only few triplets, there could be high uncertainties on the representations of unseen entities.
+- However, due to the intrinsic unreliability of [OOG] with each entity having only few triplets, there could be <u>high uncertainties</u> on the representations of unseen entities.
+- To model uncertainties, stochastically embed the unseen entities by learning the distribution over an unseen entity embedding $\phi'_{i}$ . 
+- Approximate the posterior using $q(\phi'_{i}|S_i,\phi) = N(\phi'_{i}|\mu_i,\text{})$ 

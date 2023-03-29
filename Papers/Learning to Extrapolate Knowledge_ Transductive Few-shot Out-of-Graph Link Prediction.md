@@ -48,5 +48,11 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 **Learning Objective**
 - Maximize the score of a true triplet $s(e_h, r, e_t)$ that contains any unseen entities $e'$ to rank it higher than all the other false triplets, with embedding and score function parameters $\theta$ denoted as follows:
 ![[Pasted image 20230328215106.png]]
+- Generalization to real unseen entities can be tackled with [meta-learning] by simulating unseen entities during training
 
-
+**Meta-Learning Framework**
+- We can formulate a set of tasks such that the model learns to generalize over unseen entities, which are simulated using seen entities.
+1. <u>Randomly split</u> the entities in a given graph into the [meta-training set] for simulated unseen entities, and the [meta-test set] for real unseen entities
+2. Generate a task by <u>sampling the set of simulated unseen entities</u> during meta-training, for the learned model to generalize over actual unseen entities.
+3. Each task $\mathcal{T}$ over a distribution $p(\mathcal{T})$ corresponds to a set of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ with a predefined number of instances $|\mathcal{E_T}| = N$ 
+4. Divide the triplets associative with each entity

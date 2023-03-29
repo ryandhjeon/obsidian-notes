@@ -60,4 +60,15 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 - Meta-objective: Learning to represent the unseen entities as $\phi$ using a suppor set $S$ with a meta-function $f$, to maximize the triplet score on a query set $\mathcal{Q}$ with a score function $s$ as follows:
 ![[Pasted image 20230328220849.png]]
 - Once the model is trained with the [meta-training tasks] $\mathcal{T_train}$, we can apply it to [unseen meta-test tasks] $\mathcal{T_test}$. The set of entities is disjoint from $\mathcal{T_train}$. 
-- 
+![[Pasted image 20230328221338.png]]
+
+**Graph Extrapolation Networks**
+- GNN-based meta-learner that ouputs the representation of unseen entities.
+- Extrapolates knowledge of a given graph $\mathcal{G}$ to an unseen entity $e_{i}'$ through a support set $S_i$
+![[Pasted image 20230328221623.png]]
+
+- $n(\cdot)$ is a set of neighboring entities and relations
+- $n(S_i) = {(r,e)|(e_{i}',r,e) \text{ or } (e,r,e_{i}') \in S_i}$
+- $K$ is a size of $n(S_i)$
+- $W_r \in \mathbb{R}^{d\times 2d}$ is a relation-specific transformation matrix that is meta-learned
+- $C_{r,e}$

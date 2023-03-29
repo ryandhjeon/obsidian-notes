@@ -102,5 +102,11 @@ $$s(e_h, r, e_t) = \frac{1}{L} \sum_{l=1}^{L} s(e_h, r, e_t;\phi^{'(l)},\theta),
 - During [training], represent the embeddings of unseen entities $e'_i \in \mathcal{E_T}$ using the support set $S$ with [GENs]
 - During [testing], use the [true labeled query set] $\mathcal{Q_i}$ to optimize [GENs] 
 - Every query set contains only [positive triplets], perform [negative sampling] to update a meta-learner by allowing it to distinguish positive from negative triplets.
-- Specifically, replace the entity of each triplet in the [query set] $\mathcal{Q^{-}_i} = {(e'_i, r, e^-) \text { or } (e^-, r, e'_i) | e}$ where $e^-$ is the corrupted entity.
-- 
+- Specifically, replace the entity of each triplet in the [query set] $\mathcal{Q^{-}_i} = {(e'_i, r, e^-) \text { or } (e^-, r, e'_i) \;|\; e^- \in \mathcal{E}}$ where $e^-$ is the corrupted entity.
+- Now, $\mathcal{Q^{-}_i}$ holds negative samples for an unseen entity $e'_i$ 
+- Final loss is below
+![[Pasted image 20230328233158.png]]
+
+**Meta-Learning for Long-Tail Tasks**
+- Real-world graphs follow the long-tail distributions
+- It's benefitial to transfer the knowledge from entitie

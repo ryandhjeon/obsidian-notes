@@ -63,6 +63,7 @@ BIOSNAP-sub
 Things I might add:
 1. Rather than randomly splitting the data for training, find top K dense subgraphs
 2. Adding rule miner for iterative rule guidance strategy (AnyBurl) for higher confidence score during RL. This can be added as the additional reward.
+3. Decision trans
 
 --
 REFERENCE

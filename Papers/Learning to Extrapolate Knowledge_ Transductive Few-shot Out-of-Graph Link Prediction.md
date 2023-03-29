@@ -35,7 +35,7 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 	2. [Transductive GEN]: 2nd GNN; learns to predict the links not only between seen and unseen entities, but also between unseen entities themselves.
 - Link prediction for unseen entities is unreliable, which gets worse when few triplets are available for each entitiy. 
 - [Stochastic embedding] is used to learn the distribution of unseen representations for stochastic embeeding to account for the [uncertainty]
-- [Transfer learning strategy] to model the long-tail distribution. Leads GEN to represent the unseen entities that are well aligned with the seen entities
+- [Transfer learning strategy] to model the <u>long-tail distribution</u>. Leads GEN to represent the unseen entities that are well aligned with the seen entities
 
 *Link prediction goal*
 - Entitiy prediction
@@ -43,7 +43,7 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 
 *Learning to Extrapolate Knowledge with Graph Extrapolation Networks*
 - Training for 'seen-to-seen' work well on 'seen-to-unseen' cases?
-	- No. Use [meta learning] framdework to handle the OOG link prediction problem. Train a model over a <u>distribution of tasks</u> such that the model generalizes well on unseen tasks.
+	- No, they are suboptimal in handling unseen entities. Use [meta learning] framework to handle the OOG link prediction problem. Train a model over a <u>distribution of tasks</u> such that the model generalizes well on unseen tasks.
 
 **Learning Objective**
 - Maximize the score of a true triplet $s(e_h, r, e_t)$ that contains any unseen entities $e'$ to rank it higher than all the other false triplets, with embedding and score function parameters $\theta$ denoted as follows:

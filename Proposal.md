@@ -32,7 +32,13 @@ In sparse KGs, there are insufficient evidential paths between head and tail ent
 
 - $R_h$: [hit target reward], rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
 
-*Datasets*
+*KG Completion*
 FB15K-237-10%
 FB15K-237-20%
 FB15K-237-50%
+WIN18RR
+
+*Drug-Drug Interaction (Link prediction task)*
+DeepDDI
+BIOSNAP-sub
+

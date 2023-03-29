@@ -55,7 +55,8 @@ Many practical graph problems, such as knowledge graph construction and drug-dru
 1. <u>Randomly split</u> the entities in a given graph into the [meta-training set] for simulated unseen entities, and the [meta-test set] for real unseen entities
 2. Generate a task by <u>sampling the set of simulated unseen entities</u> during meta-training, for the learned model to generalize over actual unseen entities.
 3. Each task $\mathcal{T}$ over a distribution $p(\mathcal{T})$ corresponds to a set of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ with a predefined number of instances $|\mathcal{E_T}| = N$ 
-4. Divide the triplets associative with each entity $\mathcal{e_{i}' \in \mathcal{E_T}}$ into the support set $S_i$ and the query set ![[Pasted image 20230328220410.png]]
+4. Divide the triplets associative with each entity $\mathcal{e_{i}' \in \mathcal{E_T}}$ into the [support set] $S_i$ and the query set $\mathcal{Q_i}: \mathcal{T} = \bigcup^{N}_{i=1} S_i \cup \mathcal{Q_i}$
+5. 
 
 - Meta-objective: Learning to represent the [unseen entities] as $\phi$ using a [support set] $S$ with a [meta-function] $f$, to maximize the triplet score on a [query set] $\mathcal{Q}$ with a [score function] $s$ as follows:
 ![[Pasted image 20230328220849.png]]
@@ -91,5 +92,11 @@ $$g_{\theta}(S_i, \phi) = \frac{1}{K} \sum_{(r,e)\in n(S_i)} W'_rC_{r,e} + W_0\p
 - Then compute the mean and variance via [two individual transductive GEN layers] $\mu_i = g_{\theta_{\mu}}(S_i,\phi)$  and $\sigma_i = g_{\theta_{\sigma}}(S_i,\phi)$, which modifies the GraphVAE to our setting
 - Maximize the score function $s$
 $$s(e_h, r, e_t) = \frac{1}{L} \sum_{l=1}^{L} s(e_h, r, e_t;\phi^{'(l)},\theta), \;\;\; \phi^{'(l)}\sim q(\phi'|S,\phi)$$
-- Set MC samples size to $L=1$ during [meta-training] for computational effciency
-- Set large sample size ($L=10$) for MC approximation 
+- Set MC samples size to $L=1$ during [meta-training] for computational efficiency
+- Set MC samples size to $L=10$ during [meta-testing] for MC approximation
+- Let the <u>approximate posterior</u> same as the <u>prior</u> to make the consistent pipeline at training and test
+- Model the source of uncertainty on the output embedding of an unseen entity from the [Transductive GEN] layer via Monte Carlo dropout
+- Final GEN is trained for both the inductive and transductive steps with stochastic inference
+
+**Loss function**
+- Training: Represent the embeddings of unseen entities $\mathcal{E_T} \subset \mathcal{E'}$ consists of a [support set] and [query set]

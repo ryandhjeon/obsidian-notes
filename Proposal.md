@@ -15,4 +15,10 @@ Starting at a query enetity, an agent performs a walk on the graph by sequential
 
 
 
-Extract Subgraphs
+Method:
+
+1. Extract Subgraphs
+2. Transductive Few-shot learning for expolating the data. The output embedding will guide 
+3. 
+
+

@@ -18,7 +18,16 @@ Starting at a query enetity, an agent performs a walk on the graph by sequential
 Method:
 
 1. Extract Subgraphs
-2. Transductive Few-shot learning for expolating the data. The output embedding will guide 
-3. 
+2. Transductive Few-shot learning for expolating the data. The output information will guide multi-hop reasoning models for the model learning. The probability vector of all entities being the tail entity. The ht from LSTM is added to the state representation.
+3. We sample an entity based on probability distribution $\text p$ and denote its vector as $e_p$.
+
+
+
+###### Reference
+
+
+
+
+
 
 

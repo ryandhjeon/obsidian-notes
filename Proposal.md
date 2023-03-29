@@ -45,7 +45,6 @@ In sparse KGs, there are insufficient evidential paths between head and tail ent
 
 *Reward design*
 - Hit target reward $R_h$ 
-
 - $R_h$: [hit target reward], rewards 1 if the predicted triple $\epsilon = (e_s, r_q, e_T) \in KG$
 
 *KG Completion*
@@ -58,3 +57,30 @@ WIN18RR
 DeepDDI
 BIOSNAP-sub
 
+*Evaluation*: To validate the model efficiency, we plan to split the graph into train set, support set, and query set for testing purpose. In addition, for model performance evaluation, we propose to use the proportion of correct tail entity rankings in the top K, Hit Ratio of 1, 3, 10 (Hits@K) and Mean reciprocal rank of all correct tail entities.
+
+--
+Things I might add:
+1. Rather than randomly splitting the data for training, find top K dense subgraphs
+2. Adding rule miner for iterative rule guidance strategy (AnyBurl) for higher confidence score during RL. This can be added as the additional reward.
+
+--
+REFERENCE
+
+[1]       J. Baek, D. B. Lee, and S. J. Hwang, “Learning to Extrapolate Knowledge: Transductive Few-shot Out-of-Graph Link Prediction,” in _Advances in Neural Information Processing Systems_, Curran Associates, Inc., 2020, pp. 546–560. Accessed: Mar. 21, 2023. [Online]. Available: https://proceedings.neurips.cc/paper/2020/hash/0663a4ddceacb40b095eda264a85f15c-Abstract.html
+
+[2]       R. Das _et al._, “Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning.” arXiv, Dec. 30, 2018. Accessed: Jan. 29, 2023. [Online]. Available: http://arxiv.org/abs/1711.05851
+
+[3]       W. Xiong, T. Hoang, and W. Y. Wang, “DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning,” in _Proceedings of the 2017 Conference on Empirical Methods in Natural           Language Processing_, Copenhagen, Denmark: Association for Computational Linguistics, 2017, pp. 564–573. doi: 10.18653/v1/D17-1060.
+
+[4]       X. V. Lin, R. Socher, and C. Xiong, “Multi-Hop Knowledge Graph Reasoning with Reward Shaping.” arXiv, Sep. 11, 2018. Accessed: Jan. 26, 2023. [Online]. Available: http://arxiv.org/abs/1808.10568
+
+[5]       G. Marcus, “Deep Learning: A Critical Appraisal”.
+
+[6]       “Lv et al. - 2020 - Dynamic Anticipation and Completion for Multi-Hop .pdf.”
+
+[7]       L. A. Galárraga, C. Teflioudi, K. Hose, and F. Suchanek, “AMIE: association rule mining under incomplete evidence in ontological knowledge bases,” in _Proceedings of the 22nd international conference on World Wide Web_, Rio de Janeiro Brazil: ACM, May 2013, pp. 413–422. doi: 10.1145/2488388.2488425.
+
+[8]       C. Meilicke, M. W. Chekol, D. Ruffinelli, and H. Stuckenschmidt, “Anytime Bottom-Up Rule Learning for Knowledge Graph Completion,” in _Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence_, Macao, China: International Joint Conferences on Artificial Intelligence Organization, Aug. 2019, pp. 3137–3143. doi: 10.24963/ijcai.2019/435.
+
+[9]       Y. Xia, M. Lan, J. Luo, X. Chen, and G. Zhou, “Iterative rule-guided reasoning over sparse knowledge graphs with deep reinforcement learning,” _Inf. Process. Manag._, vol. 59, no. 5, p. 103040, Sep. 2022, doi: 10.1016/j.ipm.2022.103040.

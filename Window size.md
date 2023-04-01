@@ -1,0 +1,2 @@
+- Neighborhood의 사이즈를 정해주는 것
+- Window 사이즈 안에 있는것들은 Neighbor들이다

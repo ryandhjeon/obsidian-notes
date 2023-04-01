@@ -29,7 +29,13 @@ https://www.youtube.com/watch?v=prX2p9S8C1U
 - DeepWalk
 	- 이웃을 어떻게 정의 할 것인지
 	- 그래프간의 연관성이 어떻게 되는지?
-	- Diffusion: 정보의 교환을 통해서 
+	- Diffusion: 연결된 노드에 따라 정보의 교환(Diffusion)을 할 수 있다.
+	- $A$를 제곱해서 $A^2$ 로 2 Step의 연결 여부를 알수가 있다.
+	- 평균을 하게 되면, [[High order proximity]] 를 정보를 알수가 있다. 
+	- PPMI를 적용할수 있는데,
+		- ex. Node 1번이 파워가 커졌을때, 그것이 어떻게 전파되는지. Negative value가 됬을때는 0으로 전처리를 하는 방법이 PPMI.
+	- [[Window size]]: Neighborhood의 사이즈를 정해주는 것. 안에 있는것들은 Neighbor이다. 비슷한 정보들이 window안에 있기 때문에 비슷하게 Embedding 되어야 한다.
+	- 
 
 
 

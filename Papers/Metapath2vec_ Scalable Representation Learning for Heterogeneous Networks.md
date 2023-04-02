@@ -35,7 +35,10 @@ https://www.youtube.com/watch?v=prX2p9S8C1U
 	- PPMI를 적용할수 있는데,
 		- ex. Node 1번이 파워가 커졌을때, 그것이 어떻게 전파되는지. Negative value가 됬을때는 0으로 전처리를 하는 방법이 PPMI.
 	- [[Window size]]: Neighborhood의 사이즈를 정해주는 것. 안에 있는것들은 Neighbor이다. 비슷한 정보들이 window안에 있기 때문에 비슷하게 Embedding 되어야 한다.
-	- 
+	- 보통은 One-hot encodding을 사용하지만, [[Skip-gram]]의 Hidden layer의 가중치를 사용하게 된다 (Negative sampling).
+	- 한계: 
+		- 노드가 같다는 것을 Assume 하고 시작한다.
+		- 하지만 Node & Relation type이 다를때, Deepwalk 기반은 문제가 있다.
 
 
 

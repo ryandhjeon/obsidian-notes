@@ -1,7 +1,6 @@
-#HeterogeneousGraph #Recommendation 
+#HeterogeneousGraph #Recommendation #LinkPrediction 
 
 ### Introduction
-
 
 ### Methods
 

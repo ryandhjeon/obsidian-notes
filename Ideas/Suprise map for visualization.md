@@ -11,7 +11,7 @@ COVID-19 이 나타났다
 2.1 기존 Chropleth map들의 장점
 
 
-2.2 Spatial difference
+2.2 Spatial difference / Temporal Difference
 
 NYT, Johns Hopkins
 
@@ -22,11 +22,12 @@ NYT, Johns Hopkins
 [The COVID-19 Pandemic Vulnerability Index (PVI) Dashboard: Monitoring County-Level Vulnerability Using Visualization, Statistical Modeling, and Machine Learning]
 
 
-2.3 Temporal Difference
-
-2.3 Misleading Maps
+2.2 Misleading Maps
 
 [From coronavirus to bushfires, misleading maps are distorting reality](https://firstdraftnews.org/articles/from-coronavirus-to-bushfires-misleading-maps-are-distorting-reality/)
+
+2.3 Tools /apps
+
 
 
 

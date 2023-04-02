@@ -11,16 +11,35 @@ COVID-19 이 나타났다
 2.1 기존 Chropleth map들의 장점
 
 
-2.2 여러 정보를 담기위한 choropleth map
+2.2 Spatial difference
+
+NYT, Johns Hopkins
 
 [Visualizing COVID-19 information for public: Designs, effectiveness, and preference of thematic maps]
 
 [Map Visualization using Spatial and Spatio-Temporal Data: Application to COVID-19 Data]
 
+[The COVID-19 Pandemic Vulnerability Index (PVI) Dashboard: Monitoring County-Level Vulnerability Using Visualization, Statistical Modeling, and Machine Learning]
 
-2.3 Surprise map에 대한 페이퍼
+
+2.3 Temporal Difference
+
+2.3 Misleading Maps
+
+[From coronavirus to bushfires, misleading maps are distorting reality](https://firstdraftnews.org/articles/from-coronavirus-to-bushfires-misleading-maps-are-distorting-reality/)
+
+
+
+2.4 Surprise map에 대한 페이퍼
 
 
 
 우리의 Method
 
+
+
+3. Dataset
+
+3.1 Data Collection
+
+3.2 Data Preprocessing

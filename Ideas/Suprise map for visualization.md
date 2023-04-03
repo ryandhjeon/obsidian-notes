@@ -2,7 +2,13 @@
 
 The unprecedented COVID-19 pandemic has affected human lives at all levels. Maps visualizing this pandemic have become a valuable tool for public to retrieve and under- stand the situation in their areas of interest.
 
-The resulting thematic maps are used for not only professionals but also to the public to easily identify regional hotspots as well as hazard areas against the pandemic. The thematic maps are published in news and media for the public with the ease of read, but 
+The resulting thematic maps are used for not only professionals but also to the public to easily identify regional hotspots as well as hazard areas against the pandemic. The thematic maps are published in news and media for the public with the ease of read. There is more to the data, and it can allow researchers to go beyond the simple maps of present to tell a much bigger, more surprise to the story. This paper is intended to explain shortcomings of existing Covid-19 map examples and provide a visualization tool that shows suprise visualization of Covid-19 data that highlights unsual or informative spatial regions on the thematic map. 
+
+
+[The need for GIScience in mapping COVID-19]
+- Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints
+
+- Whatever the method of collection, the increase of higher resolution and dynamic geo-located data on COVID-19 can allow researchers to go beyond the simple maps of present to tell a much bigger, more detailed story.
 
 
 COVID-19 이 나타났다
@@ -52,10 +58,6 @@ In addition to the irritating absolute numbers, Fig. [4](https://link.springer.
 - 
 
 
-[The need for GIScience in mapping COVID-19]
-- Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints
-
-- Whatever the method of collection, the increase of higher resolution and dynamic geo-located data on COVID-19 can allow researchers to go beyond the simple maps of present to tell a much bigger, more detailed story.
 
 
 2.3 Tools /apps

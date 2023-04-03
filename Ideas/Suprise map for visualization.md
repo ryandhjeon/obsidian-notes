@@ -1,8 +1,14 @@
 **INTRODUCTION**
 
-The unprecedented COVID-19 pandemic has affected human lives at all levels. Maps visualizing this pandemic have become a valuable tool for public to retrieve and under- stand the situation in their areas of interest.
+The COVID-19 pandemic has caused significant disruptions to the lives of people worldwide, and the visualization of its spread through thematic maps has become an essential tool in the fight against the virus. While these maps have helped identify regional hotspots and areas most at risk, they have not yet fully explored the potential of the data. This paper proposes a novel visualization tool that goes beyond the limitations of existing maps, utilizing the idea from Correll et al.'s Surprise Map to identify unusual or informative spatial regions that are not immediately apparent.
 
-The resulting thematic maps are used for not only professionals but also to the public to easily identify regional hotspots as well as hazard areas against the pandemic. The thematic maps are published in news and media for the public with the ease of read. There is more to the data, and it can allow researchers to go beyond the simple maps of present to tell a much bigger, more surprise to the story. This paper is intended to explain shortcomings of existing Covid-19 map examples and provide a visualization tool that shows suprise visualization of Covid-19 data that highlights unsual or informative spatial regions on the thematic map. 
+Our approach involves constructing a space of initially equi-plausible models and performing Bayesian update steps to re-estimate their plausibility. By doing so, we are able to identify surprising events and visualize them on thematic maps, providing a more complete and insightful story of the pandemic's impact. The tool aims to improve our understanding of the virus and its effects on the United States, contributing to the ongoing fight against it.
+
+By highlighting unusual and informative regions on thematic maps, we hope to provide a more comprehensive understanding of the virus's impact and help identify areas that require more attention. Our work shows the potential of advanced data visualization tools in tackling complex problems such as the COVID-19 pandemic, and we believe that our approach can be applied to other areas of research and analysis as well.
+
+
+
+
 
 
 [The need for GIScience in mapping COVID-19]

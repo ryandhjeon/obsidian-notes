@@ -6,14 +6,15 @@ Our approach involves constructing a space of initially equi-plausible models an
 
 By highlighting unusual and informative regions on thematic maps, we hope to provide a more comprehensive understanding of the virus's impact and help identify areas that require more attention. Our work shows the potential of advanced data visualization tools in tackling complex problems such as the COVID-19 pandemic, and we believe that our approach can be applied to other areas of research and analysis as well.
 
-
 2. Thematic map
 
 2.1 기존 Chropleth map들의 장점
 
+
+
 [Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps]
 
-cartographers have conducted research on the readability and the usability of thematic maps for decades, and they have found many rules for suitable choropleth maps that avoid to misinform or misguide the map reader (e.g., Bertin [1967](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR1 "Bertin J (1967) Sémiologie graphique: Les diagrammes, les réseaux, les cartes. Gauthier-Villars, Paris"); Dibiase et al. [1992](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR5 "Dibiase D, MacEachren AM, Krygier JB, Reeves C (1992) Animation and the role of map design in scientific visualization. Cartogr Geogr Inf Syst. 
+Cartographers have conducted research on the readability and the usability of thematic maps for decades, and they have found many rules for suitable choropleth maps that avoid to misinform or misguide the map reader (e.g., Bertin [1967](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR1 "Bertin J (1967) Sémiologie graphique: Les diagrammes, les réseaux, les cartes. Gauthier-Villars, Paris"); Dibiase et al. [1992](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR5 "Dibiase D, MacEachren AM, Krygier JB, Reeves C (1992) Animation and the role of map design in scientific visualization. Cartogr Geogr Inf Syst. 
 https://doi.org/10.1559/152304092783721295"); MacEachren [1995](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR11 "MacEachren AM (1995) How maps work. Guilford Press, New York"); Tyner [2010](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR23 "Tyner JA (2010) Principles of map design. Guilford Press, New York")).
 
 In Monmonier ([1996](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR14 "Monmonier M (1996) How to lie with maps. Am Stat. 

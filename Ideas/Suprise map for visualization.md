@@ -11,15 +11,9 @@ By highlighting unusual and informative regions on thematic maps, we hope to pro
 
 
 
-[The need for GIScience in mapping COVID-19]
-- Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints
-
-- Whatever the method of collection, the increase of higher resolution and dynamic geo-located data on COVID-19 can allow researchers to go beyond the simple maps of present to tell a much bigger, more detailed story.
 
 
-COVID-19 이 나타났다
 
-많은 기관들에서 Covid status를 매일 확인하기 위해 Choropleth map을 사용하였다.
 
 2. Thematic map
 
@@ -63,6 +57,10 @@ In addition to the irritating absolute numbers, Fig. [4](https://link.springer.
 [From coronavirus to bushfires, misleading maps are distorting reality](https://firstdraftnews.org/articles/from-coronavirus-to-bushfires-misleading-maps-are-distorting-reality/)
 - 
 
+[The need for GIScience in mapping COVID-19]
+- Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints
+
+- Whatever the method of collection, the increase of higher resolution and dynamic geo-located data on COVID-19 can allow researchers to go beyond the simple maps of present to tell a much bigger, more detailed story.
 
 
 

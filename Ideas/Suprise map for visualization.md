@@ -10,6 +10,11 @@ By highlighting unusual and informative regions on thematic maps, we hope to pro
 
 **2.1 Chropleth map**
 
+
+
+
+**2.2 Misleading maps**
+
 The earliest known choropleth map (CM) called cartes teintées (colored map in French) was created by Baron Pierre Charles Dupin in 1826.[1] The 
 
 Cartographers have conducted research on the readability and the usability of thematic maps for decades, and they have found many rules for suitable choropleth maps that avoid to misinform or misguide the map reader (e.g., Bertin [1967](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR1 "Bertin J (1967) Sémiologie graphique: Les diagrammes, les réseaux, les cartes. Gauthier-Villars, Paris"); Dibiase et al. [1992](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR5 "Dibiase D, MacEachren AM, Krygier JB, Reeves C (1992) Animation and the role of map design in scientific visualization. Cartogr Geogr Inf Syst. 
@@ -24,9 +29,6 @@ https://digitalcommons.liberty.edu/textbooks/2
 absolute numbers of confirmed COVID-19 cases were used for differently sized US states with varying population. To make the COVID-19 cases comparable, one has to normalize them against the total population. A widely used rate is cases per 100,000 inhabitants. Then, comparisons are meaningful, even in less populated states or regions.
 
 In addition to the irritating absolute numbers, Fig. [4](https://link.springer.com/article/10.1007/s42489-020-00057-w#Fig4) is illustrated with red colors, which is known to be able to cause anxiety, fear or danger on the map reader’s side. So, this is an inappropriate choropleth map representation for the map content related to a pandemic, which is an unpleasant topic by itself. Slocum et al. ([2009](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR21 "Slocum TA, McMaster RB, Kessler FC, Howard HH (2009) Thematic cartography and geovisualization, 3rd edn. Prentice Hall, Upper Saddle River")) present examples of appropriate choropleth maps and could be consulted for best practice examples. [5]
-
-
-**2.2 Misleading maps**
 
 Suppose we wish to represent on a map some data concerning, to take the most common example, the human population. For instance, we might wish to show votes in an election, incidence of a disease, number of cars, televisions, or phones in use, numbers of people falling in one group or another of the population, by age or income, or any of very many other variables of statistical, medical, or demographic interest. The typical course under such circumstances would be to choose one of the standard projections for the area of interest and plot the data on it with some color code or similar representation. Such maps, however, can be misleading. A plot of disease incidence, for example, will inevitably show high incidence in cities and low incidence in rural areas, solely because more people live in cities.
 
@@ -50,16 +52,14 @@ Securing geo-located health data at a high enough spatial resolution to detect m
 
 **2.4 Surprise map**
 
-Correll et al. suggests that unexpected events or patterns of events can occur in time, space, or a combination of both. Maps are sensitive to both base rates and sampling error, but does not explicitly. encode information about either, which may obscure unexpected but important patterns, or mislead the viewer. Bayesian surprise relies on viewing the data relative to a model space of expected event distributions. As new data are observed, the plausibiliiy of each of these model shifts. The most suprising events will be presented. Using this method, we will find the surprising values regarding to the Covid-19 data.
+According to Correll et al.[11], unexpected events or patterns of events can manifest in time, space, or a combination of both. While maps can reveal these patterns, they are influenced by both base rates and sampling error, but maps do not explicitly encode information about either factor. This can result in the obscuring of important patterns or misleading viewers. In contrast, Bayesian surprise analysis [12] involves comparing observed data to a model space of expected event distributions. As new data is collected, the plausibility of each model shifts, and the most surprising events are highlighted. By using this approach, it is possible to identify surprising values related to Covid-19 data. 
 
 
+**3. Dataset**
 
+**3.1 Data Collection**
 
-3. Dataset
-
-3.1 Data Collection
-
-3.2 Data Preprocessing
+**3.2 Data Preprocessing**
 
 
 

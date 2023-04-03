@@ -10,7 +10,10 @@ By highlighting unusual and informative regions on thematic maps, we hope to pro
 
 2.1 기존 Chropleth map들의 장점
 
+The earliest known choropleth map (CM) called cartes teintées (colored map in French) was created by Baron Pierre Charles Dupin in 1826.[1] The 
 
+
+1. Friendly M. Milestones in the history of thematic cartography, statistical graphics, and data visualization. Available at: http://datavis.ca/mile stones/ [Accessed April 4, 2019].
 
 [Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps]
 

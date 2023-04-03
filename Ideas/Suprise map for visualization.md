@@ -7,22 +7,9 @@ Our approach involves constructing a space of initially equi-plausible models an
 By highlighting unusual and informative regions on thematic maps, we hope to provide a more comprehensive understanding of the virus's impact and help identify areas that require more attention. Our work shows the potential of advanced data visualization tools in tackling complex problems such as the COVID-19 pandemic, and we believe that our approach can be applied to other areas of research and analysis as well.
 
 
-
-
-
-
-
-
-
-
 2. Thematic map
 
 2.1 기존 Chropleth map들의 장점
-
-
-2.2 Spatial difference / Temporal Difference
-
-NYT, Johns Hopkins
 
 [Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps]
 
@@ -38,6 +25,12 @@ https://digitalcommons.liberty.edu/textbooks/2
 absolute numbers of confirmed COVID-19 cases were used for differently sized US states with varying population. To make the COVID-19 cases comparable, one has to normalize them against the total population. A widely used rate is cases per 100,000 inhabitants. Then, comparisons are meaningful, even in less populated states or regions.
 
 In addition to the irritating absolute numbers, Fig. [4](https://link.springer.com/article/10.1007/s42489-020-00057-w#Fig4) is illustrated with red colors, which is known to be able to cause anxiety, fear or danger on the map reader’s side. So, this is an inappropriate choropleth map representation for the map content related to a pandemic, which is an unpleasant topic by itself. Slocum et al. ([2009](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR21 "Slocum TA, McMaster RB, Kessler FC, Howard HH (2009) Thematic cartography and geovisualization, 3rd edn. Prentice Hall, Upper Saddle River")) present examples of appropriate choropleth maps and could be consulted for best practice examples.
+
+2.2 Spatial difference / Temporal Difference
+
+NYT, Johns Hopkins
+
+
 
 [Visualizing COVID-19 information for public: Designs, effectiveness, and preference of thematic maps]
 

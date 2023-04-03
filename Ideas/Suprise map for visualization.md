@@ -17,7 +17,15 @@ NYT, Johns Hopkins
 
 [Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps]
 
+In Monmonier ([1996](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR14 "Monmonier M (1996) How to lie with maps. Am Stat. 
+https://doi.org/10.2307/2685420")), cartographic principles are discussed and how maps can be used and misused is illustrated. In Monmonier ([1996](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR14 "Monmonier M (1996) How to lie with maps. Am Stat. 
+https://doi.org/10.2307/2685420")) and Campbell and Shin ([2011](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR4 "Campbell JE, Shin M (2011) Essentials of geographic information systems; Saylor Academy: Washington, DC, USA, 
+https://digitalcommons.liberty.edu/textbooks/2
+. Accessed 6 Jul 2020")), one finds elaborate descriptions of the intricacies of color use, symbol selection and map design as well as layout issues.
 
+absolute numbers of confirmed COVID-19 cases were used for differently sized US states with varying population. To make the COVID-19 cases comparable, one has to normalize them against the total population. A widely used rate is cases per 100,000 inhabitants. Then, comparisons are meaningful, even in less populated states or regions.
+
+In addition to the irritating absolute numbers, Fig. [4](https://link.springer.com/article/10.1007/s42489-020-00057-w#Fig4) is illustrated with red colors, which is known to be able to cause anxiety, fear or danger on the map reader’s side. So, this is an inappropriate choropleth map representation for the map content related to a pandemic, which is an unpleasant topic by itself. Slocum et al. ([2009](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR21 "Slocum TA, McMaster RB, Kessler FC, Howard HH (2009) Thematic cartography and geovisualization, 3rd edn. Prentice Hall, Upper Saddle River")) present examples of appropriate choropleth maps and could be consulted for best practice examples.
 
 [Visualizing COVID-19 information for public: Designs, effectiveness, and preference of thematic maps]
 

@@ -6,21 +6,36 @@ Our approach involves constructing a space of initially equi-plausible models an
 
 By highlighting unusual and informative regions on thematic maps, we hope to provide a more comprehensive understanding of the virus's impact and help identify areas that require more attention. Our work shows the potential of advanced data visualization tools in tackling complex problems such as the COVID-19 pandemic, and we believe that our approach can be applied to other areas of research and analysis as well.
 
-2. Thematic map
+**2. Thematic map**
 
-2.1 기존 Chropleth map들의 장점
+**2.1 Chropleth map**
 
 The earliest known choropleth map (CM) called cartes teintées (colored map in French) was created by Baron Pierre Charles Dupin in 1826.[1] The 
 
 
 
-2.2 Misleading maps
+**2.2 Misleading maps**
 
 Suppose we wish to represent on a map some data concerning, to take the most common example, the human population. For instance, we might wish to show votes in an election, incidence of a disease, number of cars, televisions, or phones in use, numbers of people falling in one group or another of the population, by age or income, or any of very many other variables of statistical, medical, or demographic interest. The typical course under such circumstances would be to choose one of the standard projections for the area of interest and plot the data on it with some color code or similar representation. Such maps, however, can be misleading. A plot of disease incidence, for example, will inevitably show high incidence in cities and low incidence in rural areas, solely because more people live in cities.
 
 The obvious cure for this problem is to plot a fractional measure rather than raw incidence data; we plot some measure of the number of cases per capita, binned in segments small enough to give good spatial resolution but large enough to give reliable sampling. This method has its own problems, however, because it discards all information about where most of the cases are occurring. [2] 
 
 Changes in testing capacity, reporting discrepancies around fatalities, and overall differences in methodologies have made interpreting data a challenge, especially when trying to compare one geographic region or time period to another. [3]
+
+Maps themselves can be misleading, misrepresented and misinterpreted. A misinformation can be viral and impact millions of people in a few second through social media. [4]
+
+**2.3 Surprise map**
+
+
+**2.4 Visualization Tools**
+
+
+3. Dataset
+
+3.1 Data Collection
+
+3.2 Data Preprocessing
+
 
 
 REFERENCE
@@ -46,7 +61,7 @@ absolute numbers of confirmed COVID-19 cases were used for differently sized US 
 
 In addition to the irritating absolute numbers, Fig. [4](https://link.springer.com/article/10.1007/s42489-020-00057-w#Fig4) is illustrated with red colors, which is known to be able to cause anxiety, fear or danger on the map reader’s side. So, this is an inappropriate choropleth map representation for the map content related to a pandemic, which is an unpleasant topic by itself. Slocum et al. ([2009](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR21 "Slocum TA, McMaster RB, Kessler FC, Howard HH (2009) Thematic cartography and geovisualization, 3rd edn. Prentice Hall, Upper Saddle River")) present examples of appropriate choropleth maps and could be consulted for best practice examples.
 
-2.2 Spatial difference / Temporal Difference
+
 
 NYT, Johns Hopkins
 
@@ -60,14 +75,6 @@ NYT, Johns Hopkins
 
 [The COVID-19 Pandemic Vulnerability Index (PVI) Dashboard: Monitoring County-Level Vulnerability Using Visualization, Statistical Modeling, and Machine Learning]
 
-
-2.2 Misleading Maps
-
-
-
-
-- 
-
 [The need for GIScience in mapping COVID-19]
 - Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints
 
@@ -75,21 +82,6 @@ NYT, Johns Hopkins
 
 
 
-2.3 Tools /apps
 
 
 
-
-2.4 Surprise map에 대한 페이퍼
-
-
-
-우리의 Method
-
-
-
-3. Dataset
-
-3.1 Data Collection
-
-3.2 Data Preprocessing

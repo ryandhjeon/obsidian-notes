@@ -39,7 +39,7 @@ Changes in testing capacity, reporting discrepancies around fatalities, and over
 Maps themselves can be misleading, misrepresented and misinterpreted. A misinformation can be viral and impact millions of people in a few second through social media. [4]
 
 
-**2.3 Different ways to present on Choropleth**
+**2.3 Different ways of Choropleth usage**
 
 Motivated by the lack of map visualization of Covid-19 at the county level in NY for public, this study introduces a choropleth map with designed data classification and symbolization. after close exmination of the dataset. Proved that the choropleth maps lead to higher accuracy and preference than the proportional symbol map in general. Started to visualize Covid-19 [6]
 

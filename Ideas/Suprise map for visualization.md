@@ -13,7 +13,23 @@ By highlighting unusual and informative regions on thematic maps, we hope to pro
 The earliest known choropleth map (CM) called cartes teintées (colored map in French) was created by Baron Pierre Charles Dupin in 1826.[1] The 
 
 
+
+2.2 Misleading maps
+
+Suppose we wish to represent on a map some data concerning, to take the most common example, the human population. For instance, we might wish to show votes in an election, incidence of a disease, number of cars, televisions, or phones in use, numbers of people falling in one group or another of the population, by age or income, or any of very many other variables of statistical, medical, or demographic interest. The typical course under such circumstances would be to choose one of the standard projections for the area of interest and plot the data on it with some color code or similar representation. Such maps, however, can be misleading. A plot of disease incidence, for example, will inevitably show high incidence in cities and low incidence in rural areas, solely because more people live in cities.
+
+The obvious cure for this problem is to plot a fractional measure rather than raw incidence data; we plot some measure of the number of cases per capita, binned in segments small enough to give good spatial resolution but large enough to give reliable sampling. This method has its own problems, however, because it discards all information about where most of the cases are occurring. [2] 
+
+Changes in testing capacity, reporting discrepancies around fatalities, and overall differences in methodologies have made interpreting data a challenge, especially when trying to compare one geographic region or time period to another. [3]
+
+
+REFERENCE
+
 1. Friendly M. Milestones in the history of thematic cartography, statistical graphics, and data visualization. Available at: http://datavis.ca/mile stones/ [Accessed April 4, 2019].
+2. Diffusion-based method for producing density-equalizing maps
+3. States Are Reopening With No Clear Picture of U.S. Coronavirus Cases
+4. [From coronavirus to bushfires, misleading maps are distorting reality](https://firstdraftnews.org/articles/from-coronavirus-to-bushfires-misleading-maps-are-distorting-reality/)
+
 
 [Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps]
 
@@ -47,11 +63,9 @@ NYT, Johns Hopkins
 
 2.2 Misleading Maps
 
-[States Are Reopening With No Clear Picture of U.S. Coronavirus Cases]
-- Changes in testing capacity, reporting discrepancies around fatalities, and overall differences in methodologies have made interpreting data a challenge, especially when trying to compare one geographic region or time period to another.
 
 
-[From coronavirus to bushfires, misleading maps are distorting reality](https://firstdraftnews.org/articles/from-coronavirus-to-bushfires-misleading-maps-are-distorting-reality/)
+
 - 
 
 [The need for GIScience in mapping COVID-19]

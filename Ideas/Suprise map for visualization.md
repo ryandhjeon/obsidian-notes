@@ -12,8 +12,6 @@ By highlighting unusual and informative regions on thematic maps, we hope to pro
 
 The earliest known choropleth map (CM) called cartes teintées (colored map in French) was created by Baron Pierre Charles Dupin in 1826.[1] The 
 
-
-
 Cartographers have conducted research on the readability and the usability of thematic maps for decades, and they have found many rules for suitable choropleth maps that avoid to misinform or misguide the map reader (e.g., Bertin [1967](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR1 "Bertin J (1967) Sémiologie graphique: Les diagrammes, les réseaux, les cartes. Gauthier-Villars, Paris"); Dibiase et al. [1992](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR5 "Dibiase D, MacEachren AM, Krygier JB, Reeves C (1992) Animation and the role of map design in scientific visualization. Cartogr Geogr Inf Syst. 
 https://doi.org/10.1559/152304092783721295"); MacEachren [1995](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR11 "MacEachren AM (1995) How maps work. Guilford Press, New York"); Tyner [2010](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR23 "Tyner JA (2010) Principles of map design. Guilford Press, New York")).
 
@@ -28,7 +26,6 @@ absolute numbers of confirmed COVID-19 cases were used for differently sized US 
 In addition to the irritating absolute numbers, Fig. [4](https://link.springer.com/article/10.1007/s42489-020-00057-w#Fig4) is illustrated with red colors, which is known to be able to cause anxiety, fear or danger on the map reader’s side. So, this is an inappropriate choropleth map representation for the map content related to a pandemic, which is an unpleasant topic by itself. Slocum et al. ([2009](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR21 "Slocum TA, McMaster RB, Kessler FC, Howard HH (2009) Thematic cartography and geovisualization, 3rd edn. Prentice Hall, Upper Saddle River")) present examples of appropriate choropleth maps and could be consulted for best practice examples. [5]
 
 
-
 **2.2 Misleading maps**
 
 Suppose we wish to represent on a map some data concerning, to take the most common example, the human population. For instance, we might wish to show votes in an election, incidence of a disease, number of cars, televisions, or phones in use, numbers of people falling in one group or another of the population, by age or income, or any of very many other variables of statistical, medical, or demographic interest. The typical course under such circumstances would be to choose one of the standard projections for the area of interest and plot the data on it with some color code or similar representation. Such maps, however, can be misleading. A plot of disease incidence, for example, will inevitably show high incidence in cities and low incidence in rural areas, solely because more people live in cities.
@@ -39,13 +36,24 @@ Changes in testing capacity, reporting discrepancies around fatalities, and over
 
 Maps themselves can be misleading, misrepresented and misinterpreted. A misinformation can be viral and impact millions of people in a few second through social media. [4]
 
-**2.3 Surprise map**
+
+**2.3 Different ways to present on Choropleth**
+
+Motivated by the lack of map visualization of Covid-19 at the county level in NY for public, this study introduces a choropleth map with designed data classification and symbolization. after close exmination of the dataset. Proved that the choropleth maps lead to higher accuracy and preference than the proportional symbol map in general. Started to visualize Covid-19 [6]
+
+The COVID-19 data will be spatially visualized when data on a specific date is queried for analysis. On the other hand, spatio-temporal visualization will be displayed when a time series of COVID-19 data is queried for analysis. [7]
+
+Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints. Whatever the method of collection, the increase of higher resolution and dynamic geo-located data on COVID-19 can allow researchers to go beyond the simple maps of present to tell a much bigger, more detailed story.[8]
+
+
+
+
+**2.4 Surprise map**
 
 Correll et al. suggests that 
 
-**2.4 Visualization Tools**
 
-Motivated by the lack of map visualization of Covid-19 at the county level in NY for public, this study introduces a choropleth map with designed data classification and symbolization. after close exmination of the dataset. Proved that the choropleth maps lead to higher accuracy and preference than the proportional symbol map in general. Started to visualize Covid-19 [6]
+
 
 
 3. Dataset
@@ -64,6 +72,8 @@ REFERENCE
 4. [From coronavirus to bushfires, misleading maps are distorting reality](https://firstdraftnews.org/articles/from-coronavirus-to-bushfires-misleading-maps-are-distorting-reality/)
 5. Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps
 6. [Visualizing COVID-19 information for public: Designs, effectiveness, and preference of thematic maps]
+7. Map Visualization using Spatial and Spatio-Temporal Data: Application to COVID-19 Data
+8. The need for GIScience in mapping COVID-19
 
 
 
@@ -76,14 +86,10 @@ NYT, Johns Hopkins
 
 
 
-[Map Visualization using Spatial and Spatio-Temporal Data: Application to COVID-19 Data]
 
-[The COVID-19 Pandemic Vulnerability Index (PVI) Dashboard: Monitoring County-Level Vulnerability Using Visualization, Statistical Modeling, and Machine Learning]
 
-[The need for GIScience in mapping COVID-19]
-- Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints
 
-- Whatever the method of collection, the increase of higher resolution and dynamic geo-located data on COVID-19 can allow researchers to go beyond the simple maps of present to tell a much bigger, more detailed story.
+
 
 
 

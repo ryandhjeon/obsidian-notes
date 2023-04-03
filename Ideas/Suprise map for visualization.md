@@ -26,9 +26,15 @@ NYT, Johns Hopkins
 
 2.2 Misleading Maps
 
+[States Are Reopening With No Clear Picture of U.S. Coronavirus Cases]
+
+ Changes in testing capacity, reporting discrepancies around fatalities, and overall differences in methodologies have made interpreting data a challenge, especially when trying to compare one geographic region or time period to another.
+
 [From coronavirus to bushfires, misleading maps are distorting reality](https://firstdraftnews.org/articles/from-coronavirus-to-bushfires-misleading-maps-are-distorting-reality/)
 
-The need for GIScience in mapping COVID-19
+[The need for GIScience in mapping COVID-19]
+- 
+- Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints
 
 
 

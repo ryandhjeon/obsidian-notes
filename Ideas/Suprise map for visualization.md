@@ -2,6 +2,9 @@
 
 The unprecedented COVID-19 pandemic has affected human lives at all levels. Maps visualizing this pandemic have become a valuable tool for public to retrieve and under- stand the situation in their areas of interest.
 
+The resulting thematic maps are used for not only professionals but also to the public to easily identify regional hotspots as well as hazard areas against the pandemic. The thematic maps are published in news and media for the public with the ease of read, but 
+
+
 COVID-19 이 나타났다
 
 많은 기관들에서 Covid status를 매일 확인하기 위해 Choropleth map을 사용하였다.
@@ -16,6 +19,9 @@ COVID-19 이 나타났다
 NYT, Johns Hopkins
 
 [Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps]
+
+cartographers have conducted research on the readability and the usability of thematic maps for decades, and they have found many rules for suitable choropleth maps that avoid to misinform or misguide the map reader (e.g., Bertin [1967](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR1 "Bertin J (1967) Sémiologie graphique: Les diagrammes, les réseaux, les cartes. Gauthier-Villars, Paris"); Dibiase et al. [1992](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR5 "Dibiase D, MacEachren AM, Krygier JB, Reeves C (1992) Animation and the role of map design in scientific visualization. Cartogr Geogr Inf Syst. 
+https://doi.org/10.1559/152304092783721295"); MacEachren [1995](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR11 "MacEachren AM (1995) How maps work. Guilford Press, New York"); Tyner [2010](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR23 "Tyner JA (2010) Principles of map design. Guilford Press, New York")).
 
 In Monmonier ([1996](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR14 "Monmonier M (1996) How to lie with maps. Am Stat. 
 https://doi.org/10.2307/2685420")), cartographic principles are discussed and how maps can be used and misused is illustrated. In Monmonier ([1996](https://link.springer.com/article/10.1007/s42489-020-00057-w#ref-CR14 "Monmonier M (1996) How to lie with maps. Am Stat. 

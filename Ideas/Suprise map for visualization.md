@@ -81,6 +81,11 @@ REFERENCE
 
 
 
+There are different approaches to present sptial event data or temporal data on the thematic map where particular geographical area is emphasized in relation to a pertinent variable. Choropleth map works the best for this task even with the existing drawbacks, such as base rates and sampling error. Also with the imbalance of the data, the area tend to either not show the significant changes to the data or show the insignificant data to the visual changes. This may present patterns patterns that do not exist and mislead the viewer.
+
+
+
+
 
 
 

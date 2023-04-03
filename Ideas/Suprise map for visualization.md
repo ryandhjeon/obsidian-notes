@@ -15,6 +15,10 @@ COVID-19 이 나타났다
 
 NYT, Johns Hopkins
 
+[Trustworthy COVID-19 Mapping: Geo-spatial Data Literacy Aspects of Choropleth Maps]
+
+
+
 [Visualizing COVID-19 information for public: Designs, effectiveness, and preference of thematic maps]
 
 

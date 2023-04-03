@@ -43,15 +43,14 @@ Motivated by the lack of map visualization of Covid-19 at the county level in NY
 
 The COVID-19 data will be spatially visualized when data on a specific date is queried for analysis. On the other hand, spatio-temporal visualization will be displayed when a time series of COVID-19 data is queried for analysis. [7]
 
+New york times [9] or Johns hopkins [10] does a good job of presenting data in a graph. but mostly in a raw data in a temporal or sptial way. They only show the cumulated raw data, which is simple and direct way to presenting the data.
+
 Securing geo-located health data at a high enough spatial resolution to detect meaningful patterns has proven challenging due to privacy constraints. Whatever the method of collection, the increase of higher resolution and dynamic geo-located data on COVID-19 can allow researchers to go beyond the simple maps of present to tell a much bigger, more detailed story.[8]
-
-
 
 
 **2.4 Surprise map**
 
-Correll et al. suggests that 
-
+Correll et al. suggests that unexpected events or patterns of events can occur in time, space, or a combination of both. Maps are sensitive to both base rates and sampling error, but does not explicitly. encode information about either, which may obscure unexpected but important patterns, or mislead the viewer. Bayesian surprise relies on viewing the data relative to a model space of expected event distributions. As new data are observed, the plausibiliiy of each of these model shifts. The most suprising events will be presented. Using this method, we will find the surprising values regarding to the Covid-19 data.
 
 
 
@@ -74,12 +73,10 @@ REFERENCE
 6. [Visualizing COVID-19 information for public: Designs, effectiveness, and preference of thematic maps]
 7. Map Visualization using Spatial and Spatio-Temporal Data: Application to COVID-19 Data
 8. The need for GIScience in mapping COVID-19
-
-
-
-
-NYT, Johns Hopkins
-
+9. https://www.nytimes.com/interactive/2021/us/covid-cases.html
+10. https://coronavirus.jhu.edu/map.html
+11. Surprise! Bayesian Weighting for De-Biasing Thematic Maps
+12. Itti, L., & Baldi, P. (2005). Bayesian surprise attracts human attention. _Advances in neural information processing systems_, _18_.
 
 
 

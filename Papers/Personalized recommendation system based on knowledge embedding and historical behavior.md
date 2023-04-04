@@ -19,7 +19,6 @@ Collaborative filtering (CF) usually suffers from limited performance in recomme
 3. KGs combine user historical behavior with recommendation records, making recommendation systems interpretable
 
 
-
 ### SUMMARY
 - What was the author's goal?
 - What is the most important element of this approach?

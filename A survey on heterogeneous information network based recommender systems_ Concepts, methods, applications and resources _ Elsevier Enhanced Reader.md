@@ -32,10 +32,21 @@ As an important way to alleviate information overload, a recommender system aims
 	4. Two steps
 		1. Construct a heterogeneous information network based on the user-item interaction data and all auxiliary information.
 		2. Design a recommendation model suitable for the specific heterogeneous information network.
-	5. 
 
 ![[Pasted image 20230403205915.png]]
 ![[Pasted image 20230403205927.png]]
+
+### TAXONOMY BASED ON MODELS
+(Designing a recommendation algorithm suitable for heterogeneous information networks)
+
+1. Similarity Measurement
+	1. Relation-based
+	2. Meta-path based
+2. Matrix Factorization
+	1. Regularization-based
+	2. Neural matrix factorization-based
+3. Graph Representati
+
 
 ### SUMMARY
 - What was the author's goal?

@@ -86,14 +86,24 @@ As an important way to alleviate information overload, a recommender system aims
 - Has strong cross capability and flexibility of model architecture design
 - GRL learn the rich structural and semantic information in graph data
 
-**3.1 Two-stage training-based**
-- Unsupervised GRL aims to learn low-dimensional vector representations of graph structure to conveniently store and apply to various downstream tasks.
-- Pre-training + Fine-tuning
-- Inspired by DeepWalk, and node2vec, and other methods, many unsupervised heterogeneous graph embedding methods based on randomwalks were designed. 
-	- metapath2vec, HIN2Vec
-	- Applied to the structural feature generation of recsys.
-	- HERec uses meta-path based random walks to generate object sequences and uses node2vec to learn the embeddings of objects. Then, computes the similarity of embeddings for recommendation.
-	- 
+	**3.1 Two-stage training-based**
+	- Unsupervised GRL aims to learn low-dimensional vector representations of graph structure to conveniently store and apply to various downstream tasks.
+	- Pre-training + Fine-tuning
+	- Inspired by [[DeepWalk]], and [[node2vec]], and other methods, many unsupervised heterogeneous graph embedding methods based on randomwalks were designed. 
+		- [[metapath2vec]], [[HIN2Vec]]
+		- Applied to the structural feature generation of recsys.
+		- [[HERec]] uses meta-path based random walks to generate object sequences and uses [[node2vec]] to learn the embeddings of objects. Then, computes the similarity of embeddings for recommendation.
+		- Some methods are based on relational modeling and do not need to manually specify the meta-path.
+	**3.2 End-to-end training-based**
+	- Two-stage training methods don't use the supervised information in the graph embedding stage, which is difficult for various recommendation tasks.
+	- End-to-end embedding method uses supervision information while learning the graph embedding. 
+		**3.2.1 Relation based**
+		- Relation-aware GNN ([[RGCN]]) is used for recommender systems
+		**3.2.2 Meta-path based**
+		- Introduces prior knowledge and capture high-level semantic information in heterogeneous graphs ([[HAN]])
+		- Aggregates heterogeneous neighbors of each order along the meta-path, and then aggregates different meta-paths to obtain user embedding and query embedding. 
+		- [[NIRec]] introduces an interactive information extraction layer before the dual-level aggregation layer. 
+		- MetaHIN 
 
 
 ### SUMMARY

@@ -1,0 +1,32 @@
+# A survey on heterogeneous information network based recommender systems: Concepts, methods, applications and resources | Elsevier Enhanced Reader
+#### () - 
+**Link**: https://reader.elsevier.com/reader/sd/pii/S2666651022000092?token=19B5714C0B701C3590C0E3919CF4FCF6CB54CBCD4386EF591A1492F4ECD7F6FE3367D802D7BCCC3FCAC65982EDB3F24E&originRegion=us-east-1&originCreation=20230403203749
+**DOI**: 10.1016/j.aiopen.2022.03.002
+**Code/Link**:
+**Tags**: #paper
+**Rating**:
+
+### Abstract
+
+```
+As an important way to alleviate information overload, a recommender system aims to filter out irrelevant information for users and providesthem items that they may be interestedin. In recent years, an increasing amount of works have been proposed to introduce auxiliary information in recommender systems to alleviate data sparsity and cold-start problems. Among them, heterogeneous information networks (HIN)-based recommender systems provide a unified approach to fuse various auxiliary information, which can be combined with mainstream recommendation algorithms to effectively enhance the performance and interpretability of models, and thus have been applied in many kinds of recommendation tasks. This paper provides a comprehensive and systematic survey of HIN-based recommender systems, including four aspects: concepts, methods, applications, and resources. Specifically, we firstly introduce the concepts related to recommender systems, heterogeneous information networks and HIN-based recommendation. Secondly, we present more than 70 methods categorized according to models or application scenarios, and describe representative methods symbolically. Thirdly, we summarize the benchmark datasets and open source code. Finally, we discuss several potential research directions and conclude our survey.
+```
+
+### INTRODUCTION
+
+- Recommender systems often rely on historical user behavior data
+- However, in many scenarios where users or items are updated frequently, historical behavior data is very sparse
+- Cold-start in extreme case
+- [[Auxiliary information]] to alleviate the data sparsity and cold-start problem
+- [[Heterogeneous information networks]] (HINs) naturally preserves the entities and relationshis in the recommender system, and incorporates various auxiliary information.
+- Effectively alleviates the data sparsity and cold sta
+
+
+
+### SUMMARY
+- What was the author's goal?
+- What is the most important element of this approach?
+- Can I utilize this thesis?
+- Is there any other reference I would like to review?
+- How can I improve this thesis?
+- Is Github repository available?

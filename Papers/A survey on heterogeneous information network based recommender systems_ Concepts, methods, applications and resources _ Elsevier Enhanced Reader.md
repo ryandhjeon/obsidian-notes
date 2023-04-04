@@ -103,7 +103,13 @@ As an important way to alleviate information overload, a recommender system aims
 		- Introduces prior knowledge and capture high-level semantic information in heterogeneous graphs ([[HAN]])
 		- Aggregates heterogeneous neighbors of each order along the meta-path, and then aggregates different meta-paths to obtain user embedding and query embedding. 
 		- [[NIRec]] introduces an interactive information extraction layer before the dual-level aggregation layer. 
-		- MetaHIN 
+		- [[MetaHIN]] aggregates both direct neighbors and meta-path-based neighbors as the base model of a co-adaptation meta-learner for cold-start recommendation.
+
+### FUTURE DIRECTIONS
+- Most HIN recommendation models represented by the heterogeneous GNN face many challenges.
+	- Message passing: Poor robustness, and difficult to train with some missing or wrong links (Contrastive learning, multi-task learning, graph denoising framework only suitable for homogeneous or bipartite graphs)
+	- Needs better meta-paths or meta-structures
+
 
 
 ### SUMMARY

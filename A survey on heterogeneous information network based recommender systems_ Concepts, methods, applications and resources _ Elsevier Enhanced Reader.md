@@ -55,13 +55,23 @@ As an important way to alleviate information overload, a recommender system aims
 	**Algorithms for Homogeneous Information network** (BAD)	
 	- SimRank: Homogeneous. Evaluates the similarity of objects by the [similarity of the neighbors] of two objects
 	- P-PageRank: Homogeneous. Evaluates the probability from the source object to the target object by restarting random walks
-	- Homogeneous Information Networks [ignore the different types of objects and connections]. Not suitable for recsys as Hteterogeneous Information networks.
+	- !! Homogeneous Information Networks [ignore the different types of objects and connections]. Not suitable for recsys as Hteterogeneous Information networks.
 
 	**Algorithms for Heterogeneous Information network**
 	1. Relation-based similarity measurement method
 		- Assumes that the relevance of an item to a user can be obtained from the random walk probability of the user to the item. (High Probability = High relevance of them)
 		- Always use randomwalk algorithm
-	1. Meta-path based
+	2. Meta-path based
+		- Relation-based similarity measurement methods aim to learn relation-level transition probability.
+		- Strong interpretability
+		- !! Lacks on the explicit use of higher-level semantic information.
+		- Similarity measurement based on meta-path introduces additional prior knowledge by introducing meaningful meta-paths manually
+		- Good for capturing long-range semantic information
+		- Classic Three kinds
+			- Path Count (PathSim)
+			- Path-based random walk (PCRW)
+			- Path-based pairwise random walk (HeteSim)
+		- 
 
 
 

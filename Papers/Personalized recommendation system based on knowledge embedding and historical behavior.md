@@ -13,7 +13,12 @@ Collaborative filtering (CF) usually suffers from limited performance in recomme
 ```
 
 ### INTRODUCTION
-- 
+- Many limitations with [[Collaborative Filtering]] with Sparse data and lack of information that leads to Cold start problems.
+1. KGs introduce semantic correlations between items. Can identify potential relations between items and imrpvoe recommendation accuracy
+2. KGs are composed of various types of relationships, which helps to reasonably explore user interests and increase the diversity of recommended items
+3. KGs combine user historical behavior with recommendation records, making recommendation systems interpretable
+
+
 
 ### SUMMARY
 - What was the author's goal?

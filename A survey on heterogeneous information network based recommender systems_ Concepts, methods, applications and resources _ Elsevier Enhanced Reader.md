@@ -19,9 +19,23 @@ As an important way to alleviate information overload, a recommender system aims
 - Cold-start in extreme case
 - [[Auxiliary information]] to alleviate the data sparsity and cold-start problem
 - [[Heterogeneous information networks]] (HINs) naturally preserves the entities and relationshis in the recommender system, and incorporates various auxiliary information.
-- Effectively alleviates the data sparsity and cold sta
+- Effectively alleviates the data sparsity and cold start problems, and imrpoves the interpretability of recsys.
 
+### CONCEPTS
 
+1. Meta-path
+2. Meta-structure (Meta-graph)
+3. HIN-based recommender systems
+	1. Link prediction task on the information network
+	2. Traditional recsys are based on bipartite graph modeling, difficult to use various auxiliary information.
+	3. HIN-based recommender systems have successfully solved the problem of modeling heterogeneous auxiliary information and user interaction behaviors in a unifiedmanner, which can not only effectively alleviate the data sparseness and cold start problems in the recom mender systems, but also significantly improve the interpretability of the recommender systems, so have received extensive attention and applications.
+	4. Two steps
+		1. Construct a heterogeneous information network based on the user-item interaction data and all auxiliary information.
+		2. Design a recommendation model suitable for the specific heterogeneous information network.
+	5. 
+
+![[Pasted image 20230403205915.png]]
+![[Pasted image 20230403205927.png]]
 
 ### SUMMARY
 - What was the author's goal?

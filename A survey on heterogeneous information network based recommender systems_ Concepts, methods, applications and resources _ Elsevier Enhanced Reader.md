@@ -45,7 +45,23 @@ As an important way to alleviate information overload, a recommender system aims
 2. Matrix Factorization
 	1. Regularization-based
 	2. Neural matrix factorization-based
-3. Graph Representati
+3. Graph Representation Learning
+	1. Two-state training-based
+	2. End-to-end training based: Relation based
+	3. End-to-end training based: Meta-path based
+--- 
+**Similarity Measurement**
+- Collaborative filtering calculates the [similarity based on the interaction history] between the [user] and the [item]. 
+	
+	- SimRank: Homogeneous. Evaluates the similarity of objects by the [similarity of the neighbors] of two objects
+	- P-PageRank: Homogeneous. Evaluates the probability from the source object to the target object by restarting random walks
+	- Homogeneous Information Networks [ignore the different types of objects and connections]. Not suitable for recsys as Hteterogeneous Information networks.
+
+**Algorithms for Heterogeneous Information network**
+1. Relation-based
+	-  
+2. Meta-path based
+
 
 
 ### SUMMARY

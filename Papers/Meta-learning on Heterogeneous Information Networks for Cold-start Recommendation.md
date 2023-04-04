@@ -33,8 +33,9 @@ Cold-start recommendation has been a challenging problem due to sparse user-item
 			 $$r_{ui} = h_{\omega}(\text x_u, e_i) = \text MLP(\text x_u \oplus e_i)$$
 		- Minimize loss for user $u$ to learn the preferences
 		- !! The base model $f_θ$ needs a large number of example ratings to achieve reasonable performance (Not good for cold-start scenario)
-		- Using the meta-learning problem, abstract the base model 
-	1. Co-adaptation
+		- Using the meta-learning problem, abstract the base model $f_θ = (g_{\phi} , h_ω )$ as encoding the prior knowledge $θ = {\phi, ω}$  of how to learn user preferences from contexts on HINs.
+	2. Co-adaptation
+		 `PRIOR KNOWLEDGE` using meta-learning
 		1. Semantic-wise Adaptation
 		2. Task-wise Adaptation
 		3. Optimization

@@ -50,7 +50,7 @@ As an important way to alleviate information overload, a recommender system aims
 	2. End-to-end training based: Relation based
 	3. End-to-end training based: Meta-path based
 --- 
-**Similarity Measurement**
+**1. Similarity Measurement**
 - Collaborative filtering calculates the [similarity based on the interaction history] between the [user] and the [item]. 
 	**Algorithms for Homogeneous Information network** (BAD)	
 	- SimRank: Homogeneous. Evaluates the similarity of objects by the [similarity of the neighbors] of two objects
@@ -71,8 +71,29 @@ As an important way to alleviate information overload, a recommender system aims
 			- Path Count (PathSim)
 			- Path-based random walk (PCRW)
 			- Path-based pairwise random walk (HeteSim)
-		- 
+- Summary: 
+	- Earliest works using heterogeneous similarity measurement for CF-based recommender systems
+	- Require a large amount of interactive information
+	- It’s hard to provide recommendations to users and items that lack connectivity
 
+**2. Matrix Factorization**
+- Many advantages
+- Output of matrix factorization is the hidden vectors of users and items, any user-item pair can predict the score, which improves the generalization ability and reduces space complexity
+- !! Difficulty in modeling high-order interactions between users and items
+
+**3. Graph representation learning (GRL)**
+- Recsys based on NN has achieved better recommendation results
+- Has strong cross capability and flexibility of model architecture design
+- GRL learn the rich structural and semantic information in graph data
+
+**3.1 Two-stage training-based**
+- Unsupervised GRL aims to learn low-dimensional vector representations of graph structure to conveniently store and apply to various downstream tasks.
+- Pre-training + Fine-tuning
+- Inspired by DeepWalk, and node2vec, and other methods, many unsupervised heterogeneous graph embedding methods based on randomwalks were designed. 
+	- metapath2vec, HIN2Vec
+	- Applied to the structural feature generation of recsys.
+	- HERec uses meta-path based random walks to generate object sequences and uses node2vec to learn the embeddings of objects. Then, computes the similarity of embeddings for recommendation.
+	- 
 
 
 ### SUMMARY

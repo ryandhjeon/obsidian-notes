@@ -22,8 +22,35 @@ Artificial intelligence powered by deep neural networks has reached a level of c
 
 ### The black-box problem in machine learning & psychology
 
-- After the process of deep neural network, 
+- After the process of deep neural network, the model is so complex that no human could explain how processing in these networks truly works.
+- We have access to input and output, and mass of hidden functions must infer the decision-making process.
+- This issue is the same epistemic challenge championed by cognitive pssychologists for last 150 years
+- In 1868, psychologists have used behavioral experiments to infer the properties of invisible mental processes, as when Donders recorded response times and used the subtractive method to identify stages of perceptual processing and response selection. cognitive psychology has yielded robust models of perception, attention, memory, language, and decisionmaking, all without ever observing these processes directly.
+- Cognitive psychologists have developed a science of behavior that works without opening its black box. cognitive psychology employs carefully crafted stimuli (input) and measures the corresponding behavior (output) to make causal inferences about the structure and function of the human mind.
+- Instead of altering AI architecture or generating post hoc explanations for how AI reaches its decisions, we can develop satisfying models of mind without interfering with the AI’s black box.
 
+### Ethical and political need for XAI
+
+- First, why should we care if it makes good decisions?
+- the parameters represent truth in a training data set, rather than truth in the world
+- 1. data sets that are biased against a particular group will yield predictions that are biased against that particular group
+- 2. commercial models that are trained on biased data sets will treat underrepresented groups unfairly and inaccurately
+- 3. vehicles that are trained in test circuits may not generalize adequately to real roads
+- 4. machines that are vulnerable to adversarial attacks may backfire or behave dangerously
+- we need to understand how and why things can go wrong.
+
+LEGISLATIVE BODIES & LAW
+
+- THe law give citienzens a right to understand how AI makes decisions when it makes decisions on their behalf.
+- France: includes the communication of paramenters, weights, and operations
+
+SATISFACTION
+
+- We argue that explanations must be causal, rather than correlative
+- As in human psychology, correlation is insufficient to explain behavior in machine psychology.
+- It is not enough to say “we think your loan was denied by the bank’s AI because your profile is low on variables x, y,and z, but we can’t be sure.”
+
+### 
 
 ### SUMMARY
 - What was the author's goal?

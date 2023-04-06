@@ -50,7 +50,29 @@ SATISFACTION
 - As in human psychology, correlation is insufficient to explain behavior in machine psychology.
 - It is not enough to say “we think your loan was denied by the bank’s AI because your profile is low on variables x, y,and z, but we can’t be sure.”
 
-### 
+### Machine behavior as XAI
+
+- A large sector of XAI research aims to generate explanations through more interpretable architectures, or by introducing a second AI that examines another AI's decision and learns to generate explanations for it. 
+- Explainability in AI is more AI ?!
+- As of 2017, XAI and the social sciences were largely disconnected, establishing a case for an interdisciplinary approach.
+- Around the same time, popular press articles began to capture public attention in the need for human-centric XAI
+- I think having explanations will be good. We need better approaches to that—it should be its own field of study.
+
+### A review of XAI for psychologists
+
+- XAI has a blind spot that artificial cognition could help fill
+- Simple models are interpretable, in many realistic settings their performance does not compete with deep neural networks (DNNs).
+- XAI currently lacks the practice of causal inference by the attempted falsification of a priori hypotheses.
+
+### Proxy models
+
+- As a general rule, these models sacrifice some predictive power in the service of explainability
+- Even without the ability to inspect a neuron’s receptive field, abstract rules can be extracted automatically and pruned into a more digestible representation of the larger network
+
+### Introspective models
+
+- researchers are training DNNs to interpret the decisions of other DNNs
+- 
 
 ### SUMMARY
 - What was the author's goal?

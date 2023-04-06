@@ -67,12 +67,20 @@ SATISFACTION
 ### Proxy models
 
 - As a general rule, these models sacrifice some predictive power in the service of explainability
+- sacrifice some predictive power to incorporate an interpretable architecture
 - Even without the ability to inspect a neuron’s receptive field, abstract rules can be extracted automatically and pruned into a more digestible representation of the larger network
 
 ### Introspective models
 
-- researchers are training DNNs to interpret the decisions of other DNNs
-- 
+- Introspective: Researchers are training DNNs to interpret the decisions of other DNNs
+- Train a second black box to explain the first one
+- AI-for-XAI adds another black box = need more explanation
+- this introspective network is optimized for generating explanations according to previously observed ground truth from human agents, which may not faithfully reproduce the artificial agent’s internal state
+
+### Correlative techniques & saliency maps
+
+- correlative techniques are susceptible to the threat of multicollinearity: there are often many possible causes for a given correlation.
+- Partial Dependence Plots (PDPs)
 
 ### SUMMARY
 - What was the author's goal?

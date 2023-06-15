@@ -1,10 +1,7 @@
 # Unifying Knowledge Graph Learning and Recommendation: Towards a Better Understanding of User Preferences
 #### (2019) - Yixin Cao, Xiang Wang, Xiangnan He, Zikun Hu, Tat-Seng Chua
 
-### SUMMARY
-- What was the author's goal?
-- What is the most important element of this approach?
-- Can I utilize this thesis?
-- Is there any other reference I would like to review?
-- How can I improve this thesis?
-- Is Github repository available?
+Model: KTUP
+Github: https://github.com/pbaghershahi/SAttLE/blob/main/model.py
+
+The author presents a Translation-based User Preference model (TUP) enhanced with Knowledge Graph (KG) learning. This model is devised to discern the hidden relationships between users and items, signifying users' behavioral tendencies. Initially, these preferences are symbolized as latent vectors, lacking interpretive depth. To resolve this, the author correlates these preferences with the relations present in the KG, thus infusing them with explicit semantic value. This correlation complements the intuitive comprehension that a user's decision-making process is largely influenced by the item's characteristics. The advanced model, termed as Knowledge-enhanced TUP (KTUP), simultaneously learns the representations of users, items, entities, and relations, offering a holistic perspective of the interactions. However, despite its enhanced performance, the KGE regularization does not fully harness reasoning capabilities. To encapsulate extensive connectivities and to deliver interpretable results for higher-order modeling, an explicit model is required that proficiently captures long-range relations.

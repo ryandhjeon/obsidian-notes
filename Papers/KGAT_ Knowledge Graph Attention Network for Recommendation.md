@@ -3,7 +3,7 @@
 
 
 
-<u>Pseudocode </u>
+<u>Training Pseudocode </u>
 
 Set random seeds
 Configure logging
@@ -30,9 +30,25 @@ Initialize Metrics tracking
 	Log total training time for the $epoch$
 	**If** epoch == $numEpoch$
 		Compute CF metrics
+		Log metrics
+		Update the $bestRecall$ and check for early stopping
+		Break the loop if model should stop
+		Save the model for the best recall
+	Save the metrics to a file
+	Log the best CF
 		
-		
-	
+
+<u>Predict Pseudocode </u>
+
+Determine GPU
+Load Data
+Construct the KGAT
+Load the pre-trained model
+Move the model to GPU
+Parse the list of Ks from args
+Evaluate the model for CF scores and metrics
+Save the CF scores to a file
+Print CF evaluation metrics
 	
 
 	

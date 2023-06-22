@@ -50,5 +50,9 @@ Evaluate the model for CF scores and metrics
 Save the CF scores to a file
 Print CF evaluation metrics
 	
+---
+DataLoaderBase
+	train_file = train.txt  -> [cf_train_data], [train_user_dict]
+	trest_file = test.txt -> [cf_test_data], [cf_user_dict]
+	kg_file = kg_final.txt
 
-	

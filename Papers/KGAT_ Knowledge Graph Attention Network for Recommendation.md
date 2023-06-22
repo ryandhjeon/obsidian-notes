@@ -57,6 +57,3 @@ DataLoaderBase
 	kg_file = kg_final.txt
 
 
-
-
-(user, item), user_dict

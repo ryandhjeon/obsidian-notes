@@ -56,3 +56,7 @@ DataLoaderBase
 	trest_file = test.txt -> [cf_test_data], [cf_user_dict]
 	kg_file = kg_final.txt
 
+
+
+
+(user, item), user_dict
